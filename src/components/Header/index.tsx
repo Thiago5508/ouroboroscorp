@@ -23,7 +23,7 @@ export default function Header() {
         </h1>
       </Link>
       <div className=" flex content-around gap-4 font-semibold items-center ">
-        <Link href='/' className="hover:text-blue-900 hover:tracking-widest duration-300">HOME</Link>
+        <span className="hover:text-blue-900 hover:tracking-widest duration-300">WEBPRODUTOS</span>
         <span className="hover:text-blue-900 hover:tracking-widest duration-300">NOSSOS CLIENTES</span>
         <span className="hover:text-blue-900 hover:tracking-widest duration-300">INSTITUCIONAL</span>
         <span className="hover:text-blue-900 hover:tracking-widest duration-300">CONTATO</span>

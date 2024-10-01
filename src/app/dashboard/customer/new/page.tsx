@@ -18,12 +18,12 @@ export default async function NewCustomer(){
         const name = formData.get('name')
         const phone = formData.get('phone')
         const email = formData.get('email')
+        const key  = formData.get('key')
         const adress = formData.get('adress')
-        
-        
+        const info = formData.get('info')
         
     
-        if(!name || !phone || !email || !adress){
+        if(!name || !phone || !email){
             return
     }
     await prismaClient.customer.create({
@@ -31,7 +31,9 @@ export default async function NewCustomer(){
             name: name as string,
             phone:phone as string,
             email:email as string,
+            key :key as string,
             adress:adress as string,
+            info:info as string,
             userId:session?.user.id,
         }
     })
@@ -68,15 +70,22 @@ export default async function NewCustomer(){
                         </div>
                         <div className="w-full">
                             <label className="mb-1 font-medium text-lg text-white" >Email:</label>
-                            <input 
-                            type='text'
-                            placeholder="Email EX: teste@gmail.com"
-                            required
-                            className="w-full border-2 rounded-md px-2 1 h-11 mb-2"
-                            name="email"/>
+                                <input 
+                                type='text'
+                                placeholder="Email EX: teste@gmail.com"
+                                required
+                                className="w-full border-2 rounded-md px-2 1 h-11 mb-2"
+                                name="email"/>
                         </div>
                     
                     </div>
+                    <label className="mb-1 font-medium text-lg text-white" >Senha:</label>
+                    <input 
+                    type='text'
+                    placeholder="Digite a senha do seu cliente"
+                    required
+                    className="w-full border-2 rounded-md px-2 1 h-11 mb-2"
+                    name='key'/>
                     <label className="mb-1 font-medium text-lg text-white" >Endereço:</label>
                     <input 
                     type='text'
@@ -84,6 +93,12 @@ export default async function NewCustomer(){
                     required
                     className="w-full border-2 rounded-md px-2 1 h-11 mb-2"
                     name="adress"/>
+                    <label className="mb-1 font-medium text-lg text-white" >Informações Adicionais:</label>
+                    <textarea 
+                    placeholder="Digite informaçoes adicionais sobre seu cliente como login de entrada e senhas..."
+                    required
+                    className="w-full border-2 rounded-md px-2 1 h-28 mb-2 resize-none"
+                    name='info'/>
                     <button
                     type="submit"
                     className="bg-blue-500 text-white font-bold px-2 h-11 rounded-md my-4 disabled:bg-gray-400"

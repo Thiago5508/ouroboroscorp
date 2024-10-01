@@ -18,7 +18,9 @@ model Customer {
   name String
   phone String
   email String
+  key String?
   adress String?
+  info String?
   created_at DateTime? @default(now())
   updated_at DateTime? @default(now())
 
