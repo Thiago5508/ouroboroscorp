@@ -35,6 +35,19 @@ export default function TicketItem({customer , ticket}:TicketItemProps) {
         })
     }
 
+    async function handleDelete(){
+      
+            const response = await api.delete('/api/ticket',{
+                params:{
+                    id:ticket.id as string,
+                }
+            })
+            console.log(response.data)
+        router.replace('/dashboard')
+        router.refresh();
+        alert('deletou')
+    }
+
  return (
    <tr className=" bg-slate-100 hover:bg-slate-200 duration-300 border-b-2 border-b-slate-200 h-16 last:border-b-0">
     <td className=" pl-1 text-left">
@@ -53,6 +66,15 @@ export default function TicketItem({customer , ticket}:TicketItemProps) {
         </button>
         <button onClick={OpenModal}>
             <FiFile size={24} color="blue"/>
+        </button>
+        
+    </td>
+    <td className="text-left">
+        <button 
+        className="hidden sm:block" 
+        onClick={handleDelete}
+        title="excluir solicitação">
+            <FiTrash2 size={24} color="red"/>
         </button>
     </td>
    </tr>

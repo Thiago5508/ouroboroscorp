@@ -23,10 +23,12 @@ export default function Header() {
         </h1>
       </Link>
       <div className=" flex content-around gap-4 font-semibold items-center">
-        <span className="hover:text-blue-900 hover:tracking-widest duration-300">WEBPRODUTOS</span>
+        <Link 
+          href='/Produtos'
+          className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base ">WEBPRODUTOS</Link>
         <span className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">NOSSOS CLIENTES</span>
         <span className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">INSTITUCIONAL</span>
-        <span className="hover:text-blue-900 hover:tracking-widest duration-300">CONTATO</span>
+        <span className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base">CONTATO</span>
       
 
 
@@ -39,7 +41,8 @@ export default function Header() {
           {status === 'unauthenticated' &&(
             <div className="flex flex-col items-center justify-center">
               
-              <button className=" hover:tracking-widest hover:text-white hover:bg-black duration-300 rounded text-black flex flex-1 w-full items-center justify-center" onClick={handleLogin}>
+              <button className=" hover:tracking-widest hover:text-white hover:bg-black duration-300 rounded text-black flex flex-1 w-full items-center justify-center" 
+                onClick={handleLogin}>
               
                 <FiLock size={30} color="#4b5563"/>
                 <span>AREA PARA ASSOCIADOS</span>
