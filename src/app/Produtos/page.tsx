@@ -12,8 +12,8 @@ export default function Produtos() {
         <div className=" w-full flex flex-col mx-auto">
             <div className=" w-full flex flex-row">
                 <Link
-                    target="_blank"
-                    href='http://devcontrole-theta.vercel.app'
+                    target="blank"
+                    href='https://devcontrole-theta.vercel.app'
                     rel="noopener noreferrer"
                     className="h-28 sm:w-1/4 w-2/3"
                     >
