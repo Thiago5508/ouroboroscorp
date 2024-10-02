@@ -43,9 +43,9 @@ export default function Header() {
               
               <button className=" hover:tracking-widest hover:text-white hover:bg-black duration-300 rounded text-black flex flex-1 w-full items-center justify-center" 
                 onClick={handleLogin}>
-              
+                <span className="hidden sm:block">AREA PARA ASSOCIADOS</span>
                 <FiLock size={30} color="#4b5563"/>
-                <span>AREA PARA ASSOCIADOS</span>
+                
               </button>
             </div>
           )}

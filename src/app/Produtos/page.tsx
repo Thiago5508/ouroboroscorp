@@ -15,14 +15,14 @@ export default function Produtos() {
                     target="_blank"
                     href='http://devcontrole-theta.vercel.app'
                     rel="noopener noreferrer"
-                    className="h-28 sm:w-1/4 max-w-max"
+                    className="h-28 sm:w-1/4 w-2/3"
                     >
                         <Image
                         src={produto1}
                         alt="produto1"
                     />
                 </Link>
-                <div className="w-full sm:w-2/4 flex flex-col">
+                <div className="w-full sm:w-2/4 flex flex-col text-sm sm:text-base">
                     <span className="font-semibold indent-3">WebSistema com tecnologia Next.js voltado a abertura chamados
                         e cadastramento de clientes, armazenando informações com segurança em 
                         formularios dos seus clientes você no controle do seu negocio!
