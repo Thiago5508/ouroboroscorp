@@ -27,7 +27,11 @@ export default function Produtos() {
                         e cadastramento de clientes, armazenando informações com segurança em 
                         formularios dos seus clientes você no controle do seu negocio!
                         </span>
-                        <span className=" indent-3 text-blue-500 font-bold">Clique no banner ou aqui faça um teste gratis.</span>
+                        <Link 
+                        target="blank"
+                        href='https://devcontrole-theta.vercel.app'
+                        rel="noopener noreferrer"
+                        className=" indent-3 text-blue-500 font-bold">Clique no banner ou aqui faça um teste gratis.</Link>
                         <span className=" indent-3 hidden sm:block">Ex: "Infelizmente não consegui passar na loja hoje, mas queria saber quantos clientes apareceram
                         e quem foram. Além disso,será que meu colaborador conseguiu resolver todos os pedidos que estavam pendentes? Vou olhar no sitema da empresa!"
                         </span>
