@@ -1,12 +1,15 @@
 'use client'
+import { authOptions } from "@/lib/auth";
+import prisma from "@/lib/prisma";
+import { getServerSession } from "next-auth";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import { FiLoader, FiLock, FiLogOut, FiUser } from "react-icons/fi";
 
 
+
 export default function Header() {
   const {status,data} = useSession();
-  
 
   async function handleLogin(){
     await signIn()
@@ -51,7 +54,8 @@ export default function Header() {
           )}
           {status ==='authenticated'&&(
             <div className="flex flex-row ">
-              <Link href='/dashboard' className="">
+              <Link href='/dashboard' className="flex flex-row">
+              <span>Sr(a) {data?.user?.name?.split(" ")[0]}</span>
                 <FiUser size={26} color="#4b5563"/>
               </Link>
               <button onClick={handleLogout}>
