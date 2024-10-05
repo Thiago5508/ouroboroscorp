@@ -42,7 +42,7 @@ export default function Produtos() {
             <div className=" w-full flex flex-row">
                 <Link
                         target="blank"
-                        href='https://devcontrole-theta.vercel.app'
+                        href='https://mercadooliveira.vercel.app/'
                         rel="noopener noreferrer"
                         className="h-28 sm:w-1/4 w-2/3"
                         >
@@ -58,9 +58,9 @@ export default function Produtos() {
                             <span className="font-semibold indent-3 hidden sm:block" >O modelo institucional tambem inclui a historia e a tradiçao da sua empresa, contando para o mundo como foi o seu trajeto para alcaçar o sucesso. </span>
                             <Link 
                             target="blank"
-                            href='https://devcontrole-theta.vercel.app'
+                            href='https://mercadooliveira.vercel.app/'
                             rel="noopener noreferrer"
-                            className=" text-blue-500 font-bold">Clique no banner ou aqui faça um teste gratis.</Link>
+                            className=" text-blue-500 font-bold">Clique no banner ou aqui e confira nosso ultimo trabalho.</Link>
                             <span className=" indent-3 hidden sm:block">Ex: "Onde será que tem uma padaria neste bairro? Qual seria o hotel bem avaliado mais proximo?"
                             </span>
                     </div>
