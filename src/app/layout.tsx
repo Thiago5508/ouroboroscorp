@@ -4,7 +4,13 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { AuthProvider } from "@/providers/auth";
 import { ModalProvider } from "@/providers/modal";
+import Footer from "@/components/Footer";
+import { Nunito } from 'next/font/google';
 
+const nunito = Nunito({
+  subsets: ['latin'], // Subconjunto de caracteres que você deseja suportar
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"], // Pesos das fontes que você quer usar (400 = normal, 700 = bold)
+});
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -29,12 +35,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
+        className={`${nunito.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-custom`}
       >
         <AuthProvider>
           <ModalProvider>
             <Header/>
             {children}
+            <Footer/>
           </ModalProvider>
         </AuthProvider>
       </body>

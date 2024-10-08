@@ -18,7 +18,7 @@ export default function Header() {
     await signOut()
   }
  return (
-   <header className=" w-full flex items-center px-2 py-4 bg-black h-20 text-white ">
+   <header className=" w-full flex items-center px-2 py-4 bg-custom h-20 text-white ">
     <div className=" w-full flex max-w-7xl items-center justify-between mx-auto">
       <Link href='/'>
         <h1 className="font-bold text-base sm:text-2xl pl-1 hover:tracking-widest duration-300">
@@ -26,10 +26,11 @@ export default function Header() {
         </h1>
       </Link>
       <div className=" flex content-around gap-4 font-semibold items-center">
+      <Link href='/' className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">HOME</Link>
         <Link 
           href='/Produtos'
           className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base ">WEBPRODUTOS</Link>
-        <span className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">NOSSOS CLIENTES</span>
+        
         <span className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">INSTITUCIONAL</span>
         <span className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base">CONTATO</span>
       
@@ -44,10 +45,10 @@ export default function Header() {
           {status === 'unauthenticated' &&(
             <div className="flex flex-col items-center justify-center">
               
-              <button className=" hover:tracking-widest hover:text-white hover:bg-black duration-300 rounded text-black flex flex-1 w-full items-center justify-center" 
+              <button className=" hover:tracking-widest hover:text-white bg-cu hover:bg-custom-bg text-custom duration-300 rounded flex flex-1 w-full items-center justify-center" 
                 onClick={handleLogin}>
-                <span className="hidden sm:block">AREA PARA ASSOCIADOS</span>
-                <FiLock size={30} color="#4b5563"/>
+                <span className="hidden sm:block">LOGIN</span>
+                <FiLock size={30} color="white"/>
                 
               </button>
             </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import produto1 from '@/assets/produto1.svg'
 import produto2 from '@/assets/pexels-olly-3769021.png'
-
+import hero2Img from '@/assets/laptop.png'
 
 export default function Produtos() {
  return (
@@ -69,6 +69,24 @@ export default function Produtos() {
                 
             </div>
         </div>
+        <div className="w-full flex justify-end mx-auto h-full gap-4">
+        <div>
+        <p className="flex text-right flex-col max-w-xl font-semibold">
+          <span>
+            "Desenvolvemos Aplicaçoes Web para solucionar dificuldades do dia-a-dia,
+             sejam elas organizacional,
+            fluxo de caixa, agendas, banco de dados, cadastros de clientes e muito mais..."
+            </span>
+          <span> Renata Oliveira - Diretor(a) Marketing</span>
+          </p>
+        </div>
+        <div className="max-w-96">
+            <Image 
+            src={hero2Img}
+            alt="imagem2"
+            className="w-24 sm:w-72"/>
+          </div>
+      </div>
     </main>
    </Container>
   );
