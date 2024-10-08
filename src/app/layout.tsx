@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     google: "wLMyYixsFwDgjWP_ozzh0rtskIlHb-_bBJzZEq97AEQ",
   },
   icons: {
-    icon: "../../public/favicon.png", // Caminho para o favicon
+    icon: "/favicon.ico", // Caminho para o favicon
   },
 };
 

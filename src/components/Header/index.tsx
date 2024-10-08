@@ -3,8 +3,10 @@ import { authOptions } from "@/lib/auth";
 import prisma from "@/lib/prisma";
 import { getServerSession } from "next-auth";
 import { signIn, signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 import Link from "next/link";
 import { FiLoader, FiLock, FiLogOut, FiUser } from "react-icons/fi";
+import logoub from '@/assets/oub_logo.png'
 
 
 
@@ -21,9 +23,7 @@ export default function Header() {
    <header className=" w-full flex items-center px-2 py-4 bg-custom h-20 text-white ">
     <div className=" w-full flex max-w-7xl items-center justify-between mx-auto">
       <Link href='/'>
-        <h1 className="font-bold text-base sm:text-2xl pl-1 hover:tracking-widest duration-300">
-            <span className="text-blue-800">OUB</span>CORP
-        </h1>
+        <Image src={logoub} alt="logo oub" className="w-28"/>
       </Link>
       <div className=" flex content-around gap-4 font-semibold items-center">
       <Link href='/' className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">HOME</Link>
