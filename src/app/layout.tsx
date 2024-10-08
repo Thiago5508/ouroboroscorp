@@ -24,7 +24,13 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "OubCorp - Ouroboros Corporation",
-  description: "Empresa voltado ao ramo de sistemas e desenvolvimento Web/App",
+  description: "Empresa voltado ao ramo de WEBDesing,Websistemas e desenvolvimento Web/App",
+  verification:{
+    google: "wLMyYixsFwDgjWP_ozzh0rtskIlHb-_bBJzZEq97AEQ",
+  },
+  icons: {
+    icon: "../../public/favicon.png", // Caminho para o favicon
+  },
 };
 
 export default function RootLayout({
