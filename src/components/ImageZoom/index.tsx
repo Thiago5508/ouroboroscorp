@@ -1,0 +1,86 @@
+// components/ImageZoom.js
+'use client'
+import Image, { StaticImageData } from 'next/image';
+import React, { useEffect, useState } from 'react';
+import { FaRegWindowClose } from 'react-icons/fa';
+
+
+interface BannerAmpliadoProps {
+  title: string; // Título do banner
+  shortContent: string; // Conteúdo curto exibido inicialmente
+  expandedContent: string; // Conteúdo exibido quando ampliado
+  imageURL: StaticImageData | string;
+  imagecardURL: StaticImageData | string;
+}
+
+export default function BannerAmpliado({title, shortContent, expandedContent, imageURL,imagecardURL}:BannerAmpliadoProps){
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleClick = () => {
+    setIsExpanded(true);
+  };
+
+  const handleClose = () => {
+    setIsExpanded(false);
+  };
+  useEffect(() => {
+    if (isExpanded) {
+      // Adiciona a classe para desativar o scroll da página
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Remove a classe quando o modal é fechado
+      document.body.style.overflow = 'auto';
+    }
+
+    // Limpa o efeito ao desmontar
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isExpanded]);
+
+  return (
+    <div className="relative flex  text-black ">
+      {/* Overlay */}
+      <div className={`${isExpanded ? 'fixed inset-0 bg-black bg-opacity-50 z-10 ' : ''}`} 
+      >
+        
+        {/* Banner */}
+        <div
+          className={`cursor-pointer text-center transition-all duration-500 ease-in-out ${
+            isExpanded ? 'w-4/5 items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto' : 'w-96 h-full p-4 rounded-lg'
+          } bg-gray-100`}
+          onClick={handleClick}
+        >
+          {!isExpanded ? (
+            <>
+              <h2 className="text-lg font-bold">{title}</h2>
+              <p>{shortContent}</p>
+              <Image src={imagecardURL} alt='{title}'/>
+            </>
+          ) : (
+            <>
+              <div className='flex justify-between flex-row ml-4 items-baseline'>
+                <h2 className="text-2xl font-bold mb-4">{expandedContent}</h2>
+                <button
+                  className="px-4 text-3xl py-2"
+                  onClick={(e) => {
+                    e.stopPropagation(); // Impede que o clique feche o banner imediatamente
+                    handleClose();}}>
+                  <FaRegWindowClose/>
+                </button>
+              </div>
+              <div className=" ">
+                <Image src={imageURL} alt='{title}' className='h-full'/>
+              </div>
+              <h4>{title}</h4>
+              
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+  
+
+
