@@ -3,7 +3,9 @@ import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import hero3 from '../../assets/hero3.png';
 import hero5 from '../../assets/hero5.jpg';
+import hero6 from '../../assets/hero6.webp';
 import Image from 'next/image';
+import './index.css'
 
 
 
@@ -12,8 +14,8 @@ export default function Banner() {
 
     const images = [
         { src: hero5, alt: 'Imagem 1', text: 'A empresa que estará com você do inicio ao fim.' },
-        { src: hero3, alt: 'Imagem 2', text: 'Solucões tecnologicas inovadoras.' },
-        { src: hero5, alt: 'Imagem 3', text: 'Tecnologia de ponta para seu negocio!' },
+        { src: hero3, alt: 'Imagem 2', text: 'Solucões tecnologicas que fazem a diferença.' },
+        { src: hero6, alt: 'Imagem 3', text: 'Transformando Negócios com Design inovador' },
         { src: hero3, alt: 'Imagem 4', text: 'Tudo que você precisa a um clique!' }
     ];
 
@@ -58,7 +60,7 @@ export default function Banner() {
             </AnimatePresence>
 
             {/* Indicadores de imagem */}
-            <div className="flex z-10 justify-center mt-auto mb-1"> {/* Adicione z-10 para garantir que os indicadores fiquem acima das imagens */}
+            <div className="flex z-10 justify-center mt-auto px-2  mb-1"> {/* Adicione z-10 para garantir que os indicadores fiquem acima das imagens */}
                 {images.map((_, index) => (
                     <div
                         key={index}

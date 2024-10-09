@@ -26,6 +26,57 @@ export default function Produtos() {
    <Container>
     <main className= " max-w-7xl mt-5 mx-auto px-2 text-white w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start">
     <h1 className=" w-full text-base sm:text-3xl font-semibold">Conheça todos os serviços que oferecemos!</h1>
+
+        <div className="mb-20">
+            <h2 className="font-semibold text-lg sm:text-xl mb-4"><span className="text-blue-500 font-bold text-xl sm:text-2xl mr-1">
+            Designer Gráfico</span>: compartilhe suas ideias e nós elaboramos a arte perfeita!</h2>
+            <div className="flex flex-wrap gap-6 sm:justify-between justify-around">
+                
+                
+                <BannerAmpliado 
+                imagecardURL={ima2}
+                imageURL={ima1}
+                title="Cartazes e Banners"
+                shortContent="Clique para conferir nosso último cartaz, vamos criar juntos o próximo."
+                expandedContent="Cartazes, banners e folders digitais criados sob medida para seu empreendimento." />
+
+                <BannerAmpliado 
+                imagecardURL={ima4}
+                imageURL={ima3}
+                title="WEBsites"
+                shortContent="Clique para conferir a riqueza de detalhes de nossos websites."
+                expandedContent="Aqui estão os detalhes ampliados sobre a informação 2."/>
+
+                <BannerAmpliado
+                imagecardURL={ima6} 
+                imageURL={ima5}
+                title="WEBgalerias"
+                shortContent="Clique para conferir as possibilidades de demonstrar a sua arte também."
+                expandedContent="Você pode salvar e apresentar o seu portfolio em um só lugar ."/>
+
+                <BannerAmpliado
+                imageURL={ima7}
+                imagecardURL={ima12} 
+                title="Blogs"
+                shortContent="Clique para conferir o blog resgistra a tragetoria e biografia sua ou de seu empreendimento."
+                expandedContent="Blogs servem com rede informativa sobre novidades que você quer compatilhar." />
+
+                <BannerAmpliado 
+                imagecardURL={ima9}
+                imageURL={ima8}
+                title="Websistemas e redes sociais"
+                shortContent="Clique para conferir possibilidades de como utiliza-las de forma dinâmica."
+                expandedContent="Criação dinamica de perfis onde você escolhe quais informações podem ser acessadas por todos."/>
+
+                <BannerAmpliado
+                imagecardURL={ima10} 
+                imageURL={ima11}
+                title="Logomarcas e cartões de visita"
+                shortContent="Clique para conferir o que estará a disposição para você e sua marca."
+                expandedContent="Criamos desde as logomarcas quanto a paleta de cores, sua empresa sempre na moda."/>
+            
+            </div>
+        </div>
         <h2 className="font-semibold text-base sm:text-lg ">Criação de sites para impulsionar o seu negócio </h2>
         <div className=" w-full flex flex-col mx-auto gap-10 sm:gap-14">
             <div className=" w-full flex flex-row">
@@ -84,56 +135,6 @@ export default function Produtos() {
                 </div>
             <div>
                 
-            </div>
-        </div>
-        <div className="mb-20">
-            <h2 className="font-semibold text-lg sm:text-xl mb-4"><span className="text-blue-500 font-bold text-xl sm:text-2xl mr-1">
-            Designer Gráfico</span>: compartilhe suas ideias e nós elaboramos a arte perfeita!</h2>
-            <div className="flex flex-wrap gap-6 sm:justify-between justify-around">
-                
-                
-                <BannerAmpliado 
-                imagecardURL={ima2}
-                imageURL={ima1}
-                title="Cartazes e Banners"
-                shortContent="Clique para conferir nosso último cartaz, vamos criar juntos o próximo."
-                expandedContent="Cartazes, banners e folders digitais criados sob medida para seu empreendimento." />
-
-                <BannerAmpliado 
-                imagecardURL={ima4}
-                imageURL={ima3}
-                title="WEBsites"
-                shortContent="Clique para conferir a riqueza de detalhes de nossos websites."
-                expandedContent="Aqui estão os detalhes ampliados sobre a informação 2."/>
-
-                <BannerAmpliado
-                imagecardURL={ima6} 
-                imageURL={ima5}
-                title="WEBgaleria"
-                shortContent="Clique para conferir as possibilidades de demonstrar a sua arte tambem."
-                expandedContent="Aqui estão os detalhes ampliados sobre a informação 3."/>
-
-                <BannerAmpliado
-                imageURL={ima7}
-                imagecardURL={ima12} 
-                title="Informação 1"
-                shortContent="Clique para ver mais detalhes sobre a informação 1."
-                expandedContent="Aqui estão os detalhes ampliados sobre a informação 1." />
-
-                <BannerAmpliado 
-                imagecardURL={ima9}
-                imageURL={ima8}
-                title="Informação 2"
-                shortContent="Clique para ver mais detalhes sobre a informação 2."
-                expandedContent="Aqui estão os detalhes ampliados sobre a informação 2."/>
-
-                <BannerAmpliado
-                imagecardURL={ima10} 
-                imageURL={ima11}
-                title="Informação 3"
-                shortContent="Clique para ver mais detalhes sobre a informação 3."
-                expandedContent="Aqui estão os detalhes ampliados sobre a informação 3."/>
-            
             </div>
         </div>
         <div className="w-full flex justify-end mx-auto h-full gap-4">

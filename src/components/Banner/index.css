@@ -1,0 +1,17 @@
+.indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+  }
+  
+  .indicator-active {
+    background-color: #222F37; /* Cor verde para o indicador ativo */
+  }
+  
+  .indicator-inactive {
+    background-color: #ccc; /* Cor cinza para os inativos */
+  }
+  
