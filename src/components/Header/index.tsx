@@ -26,13 +26,17 @@ export default function Header() {
         <Image src={logoub} alt="logo oub" className="w-28"/>
       </Link>
       <div className=" flex content-around gap-4 font-semibold items-center">
-      <Link href='/' className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">HOME</Link>
+        <Link 
+          href='/' 
+          className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">HOME</Link>
         <Link 
           href='/Produtos'
           className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base ">WEBPRODUTOS</Link>
-        
-        <span className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">INSTITUCIONAL</span>
-        <span className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base">CONTATO</span>
+        <Link 
+          href='/Institucional'
+          className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">INSTITUCIONAL</Link>
+        <span 
+          className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base">CONTATO</span>
       
 
 
