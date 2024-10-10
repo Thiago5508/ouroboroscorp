@@ -2,7 +2,7 @@
 'use client'
 import Image, { StaticImageData } from 'next/image';
 import React, { useEffect, useState } from 'react';
-import { FaRegWindowClose } from 'react-icons/fa';
+import { FaRegWindowClose, FaWhatsapp } from 'react-icons/fa';
 
 
 interface BannerAmpliadoProps {
@@ -11,9 +11,10 @@ interface BannerAmpliadoProps {
   expandedContent: string; // Conteúdo exibido quando ampliado
   imageURL: StaticImageData | string;
   imagecardURL: StaticImageData | string;
+  price: string;
 }
 
-export default function BannerAmpliado({title, shortContent, expandedContent, imageURL,imagecardURL}:BannerAmpliadoProps){
+export default function BannerAmpliado({title, shortContent, expandedContent, imageURL,imagecardURL,price}:BannerAmpliadoProps){
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleClick = () => {
@@ -38,6 +39,12 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
     };
   }, [isExpanded]);
 
+
+                              // whatssap
+  const phoneNumber = '5579998431776'; // Substitua pelo seu número de telefone
+  const message = `Olá! Eu gostaria de adquirir ${title} no valor  R$ ${price}` ; // Mensagem opcional
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
   return (
     <div className="relative flex  text-black ">
       {/* Overlay */}
@@ -47,7 +54,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
         {/* Banner */}
         <div
           className={`cursor-pointer text-center transition-all duration-500 ease-in-out ${
-            isExpanded ? 'w-4/5 items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto' : 'w-96 h-full p-4 rounded-lg'
+            isExpanded ? 'max-w-6xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto ' : 'w-96 h-full p-4 rounded-lg'
           } bg-gray-100`}
           onClick={handleClick}
         >
@@ -55,7 +62,15 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
             <>
               <h2 className="text-lg font-bold">{title}</h2>
               <p>{shortContent}</p>
-              <Image src={imagecardURL} alt='{title}'/>
+              <Image src={imagecardURL} alt='{title}' className='max-h-52'/>
+              <div className='flex flex-row justify-center items-center gap-2 mt-2'>
+                <span>R$ {price}</span> 
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                  <button 
+                    className='flex flex-row bg-white rounded-md text-black border-2 border-slate-300 hover:tracking-widest duration-300 font-semibold px-1 py-1'
+                    >Obter<FaWhatsapp className='sm:text-xl text-lg text-green-600'/></button>
+                </a>
+              </div>
             </>
           ) : (
             <>
@@ -70,7 +85,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
                 </button>
               </div>
               <div className=" ">
-                <Image src={imageURL} alt='{title}' className='h-full'/>
+                <Image src={imageURL} alt='{title}' className='px-4 rounded-lg h-full'/>
               </div>
               <h4>{title}</h4>
               

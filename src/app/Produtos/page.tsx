@@ -38,42 +38,48 @@ export default function Produtos() {
                 imageURL={ima1}
                 title="Cartazes e Banners"
                 shortContent="Clique para conferir nosso último cartaz, vamos criar juntos o próximo."
-                expandedContent="Cartazes, banners e folders digitais criados sob medida para seu empreendimento." />
+                expandedContent="Cartazes, banners e folders digitais criados sob medida para seu empreendimento." 
+                price="200,00 - 850,00"/>
 
                 <BannerAmpliado 
                 imagecardURL={ima4}
                 imageURL={ima3}
                 title="WEBsites"
                 shortContent="Clique para conferir a riqueza de detalhes de nossos websites."
-                expandedContent="Aqui estão os detalhes ampliados sobre a informação 2."/>
+                expandedContent="Aqui estão os detalhes ampliados sobre a informação 2."
+                price="1.500,00 - 3.000,00"/>
 
                 <BannerAmpliado
                 imagecardURL={ima6} 
                 imageURL={ima5}
                 title="WEBgalerias"
                 shortContent="Clique para conferir as possibilidades de demonstrar a sua arte também."
-                expandedContent="Você pode salvar e apresentar o seu portfolio em um só lugar ."/>
+                expandedContent="Você pode salvar e apresentar o seu portfolio em um só lugar ."
+                price="1.000,00 - 2.000,00"/>
 
                 <BannerAmpliado
                 imageURL={ima7}
                 imagecardURL={ima12} 
                 title="Blogs"
                 shortContent="Clique para conferir o blog resgistra a tragetoria e biografia sua ou de seu empreendimento."
-                expandedContent="Blogs servem com rede informativa sobre novidades que você quer compatilhar." />
+                expandedContent="Blogs servem com rede informativa sobre novidades que você quer compatilhar." 
+                price="1.650,00 - 5.000,00"/>
 
                 <BannerAmpliado 
                 imagecardURL={ima9}
                 imageURL={ima8}
                 title="Websistemas e redes sociais"
                 shortContent="Clique para conferir possibilidades de como utiliza-las de forma dinâmica."
-                expandedContent="Criação dinamica de perfis onde você escolhe quais informações podem ser acessadas por todos."/>
+                expandedContent="Criação dinamica de perfis onde você escolhe quais informações podem ser acessadas por todos."
+                price="2.500,00 - 6.550,00"/>
 
                 <BannerAmpliado
                 imagecardURL={ima10} 
                 imageURL={ima11}
                 title="Logomarcas e cartões de visita"
                 shortContent="Clique para conferir o que estará a disposição para você e sua marca."
-                expandedContent="Criamos desde as logomarcas quanto a paleta de cores, sua empresa sempre na moda."/>
+                expandedContent="Criamos desde as logomarcas quanto a paleta de cores, sua empresa sempre na moda."
+                price="150,00 - 650,00"/>
             
             </div>
         </div>
@@ -100,7 +106,7 @@ export default function Produtos() {
                         target="blank"
                         href='https://devcontrole-theta.vercel.app'
                         rel="noopener noreferrer"
-                        className=" text-blue-500 font-bold">Clique no banner ou aqui faça um teste gratis.</Link>
+                        className=" text-blue-500 font-bold">Clique no banner ou aqui e faça um teste gratis.</Link>
                         <span className=" indent-3 hidden sm:block">Ex: "Infelizmente não consegui passar na loja hoje, mas queria saber quantos clientes apareceram
                         e quem foram. Além disso,será que meu colaborador conseguiu resolver todos os pedidos que estavam pendentes? Vou olhar no sitema da empresa!"
                         </span>
