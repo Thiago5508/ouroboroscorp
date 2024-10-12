@@ -21,9 +21,9 @@ export default function Footer() {
             </div>
             <div className="flex flex-col">
                 <h2 className="font-bold">Endereço</h2>
-                <Link href='/Contato' className="flex flex-col">Rua T, 600, 
-                <span>Aruana, Aracaju-SE</span>
-                <span>49001-000</span></Link>
+                <Link href='/Contato' className="flex flex-col">Av. Delmiro Gouveia, 400
+                <span>- Coroa do Meio, Aracaju-SE</span>
+                <span>49035-500</span></Link>
             </div>
             <div className="flex flex-col">
                 <h2 className="font-bold">Siga-nos</h2>

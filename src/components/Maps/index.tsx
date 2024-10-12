@@ -6,7 +6,7 @@ export default function Maps() {
     <div className="">
     <iframe
         className=" rounded-md"
-        src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=R.+T,+600+-+Aruana,+Aracaju+-+SE,+49001-000&zoom=17`}
+        src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Av.+Delmiro+Goulveia,+400+-+Coroa+do+Meio,+Aracaju+-+SE,+491035-500&zoom=17`}
         width="350"
         height="200"
         style={{ border: 0 }}

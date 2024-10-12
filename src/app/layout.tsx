@@ -73,6 +73,7 @@ export default function RootLayout({
         {/* Meta tags personalizadas */}
         <meta name="author" content="OubCorp - Ouroboros Corporation" />
         <link rel="canonical" href="https://ouroboroscorp.vercel.app" />
+        <meta name="robots" content="index, follow"></meta>
       </Head>
       <body
         className={`${nunito.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-custom`}

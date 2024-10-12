@@ -16,7 +16,7 @@ export default function Contato() {
           <span>Nosso endereço no gps</span>
           <Link
           target="blank"
-          href='https://maps.app.goo.gl/NjEazv9eLf44xv2t8'
+          href='https://maps.app.goo.gl/RP9NkmUxtQayJGhF7'
           rel="noopener noreferrer"
           className="font-semibold text-lg bg-green-500 text-white rounded-md px-2 py-1">Google Maps</Link>
           </div>

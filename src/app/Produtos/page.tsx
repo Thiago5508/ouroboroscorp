@@ -61,7 +61,7 @@ export default function Produtos() {
                 imageURL={ima7}
                 imagecardURL={ima12} 
                 title="Blogs"
-                shortContent="Clique para conferir o blog resgistra a tragetoria e biografia sua ou de seu empreendimento."
+                shortContent="Clique para conferir, o blog resgistra a tragetoria e biografia sua ou de seu empreendimento."
                 expandedContent="Blogs servem com rede informativa sobre novidades que você quer compatilhar." 
                 price="1.650,00 - 5.000,00"/>
 
@@ -123,6 +123,7 @@ export default function Produtos() {
                             <Image
                             src={produto2}
                             alt="produto1"
+                            className="rounded-md"
                         />
                     </Link>
                     <div className="w-full sm:w-2/4 flex flex-col text-sm sm:text-base ml-4">
@@ -158,7 +159,7 @@ export default function Produtos() {
                 <Image 
                 src={hero2Img}
                 alt="imagem2"
-                className="w-24 sm:w-72"/>
+                className="w-24 sm:w-72 rounded-md"/>
             </div>
         
         </div>
