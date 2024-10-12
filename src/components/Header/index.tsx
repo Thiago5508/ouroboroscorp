@@ -35,8 +35,8 @@ export default function Header() {
         <Link 
           href='/Institucional'
           className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">INSTITUCIONAL</Link>
-        <span 
-          className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base">CONTATO</span>
+        <Link href='/Contato' 
+          className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base">CONTATO</Link>
       
 
 

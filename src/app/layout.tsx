@@ -6,6 +6,7 @@ import { AuthProvider } from "@/providers/auth";
 import { ModalProvider } from "@/providers/modal";
 import Footer from "@/components/Footer";
 import { Nunito } from 'next/font/google';
+import Head from "next/head";
 
 const nunito = Nunito({
   subsets: ['latin'], // Subconjunto de caracteres que você deseja suportar
@@ -24,12 +25,40 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "OubCorp - Ouroboros Corporation",
-  description: "Empresa voltado ao ramo de WEBDesing,Websistemas e desenvolvimento Web/App",
+  description: "Empresa voltado ao ramo de WEBDesign,Websistemas e desenvolvimento Web/App",
+  keywords: "OubCorp, Ouroboros Corporation, WebDesign, Websistemas, Desenvolvimento Web, Desenvolvimento App, Web Solutions, oubcorp, oub",
   verification:{
     google: "wLMyYixsFwDgjWP_ozzh0rtskIlHb-_bBJzZEq97AEQ",
   },
   icons: {
     icon: "/favicon.ico", // Caminho para o favicon
+  },
+  openGraph: {
+    title: 'OubCorp - Ouroboros Corporation',
+    description: 'Empresa voltada ao ramo de WebDesign, Websistemas e desenvolvimento Web/App',
+    url: 'https://ouroboroscorp.vercel.app',
+    siteName: 'OubCorp',
+    images: [
+      {
+        url: '/og-image.webp',
+        width: 800,
+        height: 600,
+        alt: 'OubCorp Logo',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@oubcorp',
+    creator: '@oubcorp',
+    images: [
+      {
+        url: '/og-image.webp',
+        alt: 'OubCorp Logo',
+      },
+    ],
   },
 };
 
@@ -40,6 +69,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* Meta tags personalizadas */}
+        <meta name="author" content="OubCorp - Ouroboros Corporation" />
+        <link rel="canonical" href="https://ouroboroscorp.vercel.app" />
+      </Head>
       <body
         className={`${nunito.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-custom`}
       >

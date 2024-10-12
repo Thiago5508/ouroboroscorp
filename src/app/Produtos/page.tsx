@@ -27,7 +27,7 @@ export default function Produtos() {
     <main className= " max-w-7xl mt-5 mx-auto px-2 text-white w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start">
     <h1 className=" w-full text-base sm:text-3xl font-semibold">Conheça todos os serviços que oferecemos!</h1>
 
-        <div className="mb-20">
+        <div className="mb-20 px-2">
             <h2 className="font-semibold text-lg sm:text-xl mb-4"><span className="text-blue-500 font-bold text-xl sm:text-2xl mr-1">
             Designer Gráfico</span>: compartilhe suas ideias e nós elaboramos a arte perfeita!</h2>
             <div className="flex flex-wrap gap-6 sm:justify-between justify-around">

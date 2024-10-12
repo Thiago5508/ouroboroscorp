@@ -11,7 +11,7 @@ export default function Footer() {
                 <Link href='/'>Home</Link>
                 <Link href='/Dashboard'>Login</Link>
                 <Link href='/Produtos'>Produtos</Link>
-                <Link href='/NossosClientes'>Nossos clientes</Link>
+                <Link href='/Institucional'>Institucional</Link>
             </div>
             <div className="flex flex-col">
                 <h2 className="font-bold">Parceiros</h2>
@@ -21,7 +21,9 @@ export default function Footer() {
             </div>
             <div className="flex flex-col">
                 <h2 className="font-bold">Endereço</h2>
-                <Link href='#'>Rua X</Link>
+                <Link href='/Contato' className="flex flex-col">Rua T, 600, 
+                <span>Aruana, Aracaju-SE</span>
+                <span>49001-000</span></Link>
             </div>
             <div className="flex flex-col">
                 <h2 className="font-bold">Siga-nos</h2>
