@@ -20,7 +20,7 @@ export default function Header() {
     await signOut()
   }
  return (
-   <header className=" w-full flex items-center px-2 py-4 bg-custom h-20 text-white ">
+   <header className=" fixed top-0 left-0 w-full flex items-center px-2 py-4 bg-custom h-20 text-white z-50">
     <div className=" w-full flex max-w-7xl items-center justify-between mx-auto">
       <Link href='/'>
         <Image src={logoub} alt="logo oub" className="w-28"/>
