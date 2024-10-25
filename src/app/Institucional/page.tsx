@@ -9,16 +9,16 @@ import { RiNextjsFill } from "react-icons/ri";
 export default function Institucional() {
  return (
     <Container>
-      <main className= " max-w-7xl mt-5 mx-auto px-2 text-white w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div>
-            <h1 className="sm:text-2xl text-xl font-semibold my-4">Sobre a Oub</h1>
+      <main className= " max-w-7xl mt-5 mx-auto px-2 text-white w-full h-max flex flex-col gap-8 row-start-2 items-center justify-center sm:items-center">
+        <div className="flex items-center justify-center flex-col">
+            <h1 className="sm:text-2xl text-xl font-semibold my-4 items-center justify-center">Sobre a Oub</h1>
             <div className="text-lg">
               <p>Somos uma empresa voltada a oferecer soluções em design gráfico e web design para pessoas, micro, média ou grandes empresas.</p>
               
               <p>Nossa visão é ser uma empresa referência em design e web desenvolvimento.</p>
               <p>Criada por Jamisson Machado e Thiago Oliveira.</p> 
             </div>
-            <div className="flex flex-col mt-6">
+            <div className="flex flex-col mt-6 ">
               <h2 className="text-xl font-semibold">Jamisson Machado</h2>
               <div className="flex flex-row items-center  gap-6 mt-6">
                 <div className="flex sm:w-1/4">
