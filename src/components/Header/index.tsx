@@ -28,15 +28,15 @@ export default function Header() {
       <div className=" flex content-around gap-4 font-semibold items-center">
         <Link 
           href='/' 
-          className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">HOME</Link>
+          className="hover:text-slate-400 hidden sm:block">HOME</Link>
         <Link 
           href='/Produtos'
-          className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base ">WEBPRODUTOS</Link>
+          className="hover:text-slate-400  text-sm sm:text-base ">WEBPRODUTOS</Link>
         <Link 
           href='/Institucional'
-          className="hover:text-blue-900 hover:tracking-widest duration-300 hidden sm:block">INSTITUCIONAL</Link>
+          className="hover:text-slate-400 hidden sm:block">INSTITUCIONAL</Link>
         <Link href='/Contato' 
-          className="hover:text-blue-900 hover:tracking-widest duration-300 text-sm sm:text-base">CONTATO</Link>
+          className="hover:text-slate-400 text-sm sm:text-base">CONTATO</Link>
       
 
 
