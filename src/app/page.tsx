@@ -34,32 +34,32 @@ export default function Home() {
       <section className="grid items-baseline grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="flex flex-col items-center justify-center p-4">
           <Image src={binoculos} alt="ico1" className="w-14 mt-6"/>
-          <h3>Maior visibilidade</h3>
+          <h3 className="pt-2 pb-2 font-semibold">Maior visibilidade</h3>
           <p>"Quem não é visto não é lembrado". Com um site, seu negócio ganha mais visibilidade, pois ele ficará visível 24 horas por dia, 365 dias no ano.</p>
         </div>
         <div className="flex flex-col items-center justify-center p-4">
-          <Image src={credbi} alt="ico1" className="w-14 mt-6"/>
-          <h3>Credibilidade</h3>
+          <Image src={credbi} alt="ico1" className="w-11 mt-6"/>
+          <h3 className="pt-2 pb-2 font-semibold">Credibilidade</h3>
           <p>Ter um site trará uma imagem mais profissional ao seu negócio e consequentemente maior credibilidade e autoridade no mercado.</p>
         </div>
         <div className="flex flex-col items-center justify-center p-4">
           <Image src={foguete} alt="ico1" className="w-14 mt-6"/>
-          <h3>Seu negócio vai além...</h3>
+          <h3 className="pt-2 pb-2 font-semibold">Seu negócio vai além...</h3>
           <p>Ter um site trará uma imagem mais profissional ao seu negócio e consequentemente maior credibilidade e autoridade no mercado.</p>
         </div>
         <div className="flex flex-col items-center justify-center p-4">
           <Image src={relacion} alt="ico1" className="w-14 mt-6"/>
-          <h3>Melhor relacionamento com seu público</h3>
+          <h3 className="pt-2 pb-2 font-semibold">Melhor relacionamento com seu público</h3>
           <p>Sites podem proporcionar um ótimo meio de interação com seu público, melhorando assim sua relação com seu cliente.</p>
         </div>
         <div className="flex flex-col items-center justify-center p-4">
           <Image src={market} alt="ico1" className="w-14 mt-6"/>
-          <h3>Marketing mais eficiente</h3>
+          <h3 className="pt-2 pb-2 font-semibold">Marketing mais eficiente</h3>
           <p>Sites são uma ótima ferramenta para divulgação, e te ajudará a construir a imagem da sua marca e do seu negócio.</p>
         </div>
         <div className="flex flex-col items-center justify-center p-4">
           <Image src={vendas} alt="ico1" className="w-14 mt-6"/>
-          <h3>Mais vendas</h3>
+          <h3 className="pt-2 pb-2 font-semibold">Mais vendas</h3>
           <p>E claro! todas essas vantagens só trarão benefícios para o seu negócio, como melhores resultados nas vendas.</p>
         </div>
       </section>
