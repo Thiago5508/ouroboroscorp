@@ -76,7 +76,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow"></meta>
       </Head>
       <body
-        className={`${nunito.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-custom pt-24`}
+        className={`${nunito.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-custom pt-28`}
       >
         <AuthProvider>
           <ModalProvider>

@@ -20,7 +20,7 @@ export default function Header() {
     await signOut()
   }
  return (
-   <header className=" fixed top-0 left-0 w-full flex items-center px-2 py-4 bg-custom h-20 text-white z-50">
+   <header className=" fixed top-0 left-0 w-full flex items-center px-2 py-4 bg-custom h-20 text-white z-40">
     <div className=" w-full flex max-w-7xl items-center justify-between mx-auto">
       <Link href='/'>
         <Image src={logoub} alt="logo oub" className="w-28"/>
@@ -34,7 +34,7 @@ export default function Header() {
           className="hover:text-white text-slate-400  text-sm sm:text-base ">Webprodutos</Link>
         <Link 
           href='/Institucional'
-          className="hover:text-white text-slate-400 hidden sm:block">Institucional</Link>
+          className="hover:text-white text-slate-400 hidden sm:block">Sobre nós</Link>
         <Link href='/Contato' 
           className="hover:text-white text-slate-400 text-sm sm:text-base">Contato</Link>
       

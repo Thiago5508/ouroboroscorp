@@ -48,13 +48,13 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
   return (
     <div className="relative flex  text-black ">
       {/* Overlay */}
-      <div className={`${isExpanded ? 'fixed inset-0 bg-black bg-opacity-50 z-10 ' : ''}`} 
+      <div className={`${isExpanded ? 'fixed inset-0 bg-black bg-opacity-50 z-50 ' : ''}`} 
       >
         
         {/* Banner */}
         <div
           className={`cursor-pointer text-center transition-all duration-500 ease-in-out ${
-            isExpanded ? 'max-w-6xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto ' : 'w-96 h-full p-4 rounded-lg'
+            isExpanded ? 'max-w-6xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto  ' : 'w-96 h-full p-4 rounded-lg'
           } bg-gray-100`}
           onClick={handleClick}
         >
@@ -74,10 +74,10 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
             </>
           ) : (
             <>
-              <div className='flex justify-between flex-row ml-4 items-baseline'>
+              <div className='flex justify-between flex-row ml-4 mt-4'>
                 <h2 className="text-2xl font-bold mb-4">{expandedContent}</h2>
                 <button
-                  className="px-4 text-3xl py-2"
+                  className="px-4 text-3xl py-2 sm:fixed sm:right-52 sm:top-10"
                   onClick={(e) => {
                     e.stopPropagation(); // Impede que o clique feche o banner imediatamente
                     handleClose();}}>

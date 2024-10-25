@@ -10,21 +10,25 @@ export default function Institucional() {
  return (
     <Container>
       <main className= " max-w-7xl mt-5 mx-auto px-2 text-white w-full h-max flex flex-col gap-8 row-start-2 items-center justify-center sm:items-center">
-        <div className="flex items-center justify-center flex-col ml-2">
-            <h1 className="sm:text-2xl text-xl font-semibold my-4 items-center sm:w-2/4">Sobre a Oub</h1>
-            <div className="text-lg w-2/4">
+        <div className="flex items-center justify-center flex-col">
+            <h1 className="sm:text-2xl text-xl font-semibold my-4 items-center sm:ml-10 sm:w-2/4">Sobre a Oub</h1>
+            <div className="text-lg sm:w-2/4 items-center justify-center sm:ml-10 ">
               <p>Somos uma empresa voltada a oferecer soluções em design gráfico e web design para pessoas, micro, média ou grandes empresas.</p>
               
               <p>Nossa visão é ser uma empresa referência em design e web desenvolvimento.</p>
               <p>Criada por Jamisson Machado e Thiago Oliveira.</p> 
             </div>
             <div className="flex flex-col mt-6 ">
-              <h2 className="text-xl font-semibold">Jamisson Machado</h2>
-              <div className="flex flex-row items-center  gap-6 mt-6">
+            <div className="text-lg  justify-items-end justify-center flex ">
+            
+            </div>
+              <div className="flex sm:flex-row flex-col items-center  gap-6 mt-6">
                 <div className="flex sm:w-1/4">
                   <Image src={foto1} alt="foto1" />
                 </div>
+                
                 <div className="flex flex-col sm:w-2/4" >
+                <h2 className="text-xl font-semibold sm:w-2/4 mb-10">Jamisson Machado</h2>
                   <p>Cofundador da Oub, estudante de Design Gráfico, Web Designer, voluntário na 
                     <Link 
                     className=" text-blue-500"
@@ -56,12 +60,13 @@ export default function Institucional() {
                   
               </div>
               <div className="flex w-full flex-col items-end justify-end">
-                <h2 className="text-xl font-semibold">Thiago Oliveira</h2>
-                <div className="flex flex-row-reverse text-right items-center  gap-6 mt-6">
+                
+                <div className="flex sm:flex-row-reverse flex-col text-right items-center  gap-6 mt-6">
                   <div className="flex sm:w-1/4">
                     <Image src={foto2} alt="foto1" className="rounded-full"/>
                   </div>
                   <div className="flex flex-col sm:w-2/4" >
+                  <h2 className="text-xl font-semibold mb-10">Thiago Oliveira</h2>
                     <p>Cofundador da Oub, estudante de Análise e Desenvolvimento de Sistemas, Web Designer e Desenvolvedor Fullstack.</p>
                         <div>
                           <div>
