@@ -10,8 +10,8 @@ export default function Institucional() {
  return (
     <Container>
       <main className= " max-w-7xl mt-5 mx-auto px-2 text-white w-full h-max flex flex-col gap-8 row-start-2 items-center justify-center sm:items-center">
-        <div className="flex items-center justify-center flex-col">
-            <h1 className="sm:text-2xl text-xl font-semibold my-4 items-center w-2/4">Sobre a Oub</h1>
+        <div className="flex items-center justify-center flex-col ml-2">
+            <h1 className="sm:text-2xl text-xl font-semibold my-4 items-center sm:w-2/4">Sobre a Oub</h1>
             <div className="text-lg w-2/4">
               <p>Somos uma empresa voltada a oferecer soluções em design gráfico e web design para pessoas, micro, média ou grandes empresas.</p>
               
