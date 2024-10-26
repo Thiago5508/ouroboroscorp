@@ -39,7 +39,7 @@ export default function Form() {
       };
     
       return (
-        <form onSubmit={handleSubmit} className="w-full items-center flex flex-col  ">
+        <form onSubmit={handleSubmit} className="w-full items-center flex flex-col gap-3 ">
           <div className="w-2/3 ">
             <label className="font-semibold">Nome:</label>
             <input
