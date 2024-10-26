@@ -47,7 +47,7 @@ export default function Institucional() {
                           <FaFigma title="Figma"/>
                           <FaBootstrap title="bootstrap" />
                           </span>
-                          <div className="flex flex-col gap-2">
+                          <div className="flex flex-col gap-2 mt-4">
                           <span>O que estou apredendo agora:</span>
                           <span className="flex flex-row text-3xl gap-2">
                           <FaJsSquare title="JavaScript"/>
@@ -79,7 +79,7 @@ export default function Institucional() {
                             <FaReact title="React"/>
                             <RiNextjsFill title="Nextjs"/>
                             </span>
-                            <div className="flex flex-col gap-2">
+                            <div className="flex flex-col gap-2 mt-4">
                             <span>O que estou apredendo agora</span>
                             <span className="flex flex-row-reverse text-3xl gap-2">
                             <FaNodeJs title="Nodejs" />

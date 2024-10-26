@@ -49,12 +49,13 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
     <div className="relative flex  text-black ">
       {/* Overlay */}
       <div className={`${isExpanded ? 'fixed inset-0 bg-black bg-opacity-50 z-50 ' : ''}`} 
+      
       >
         
         {/* Banner */}
         <div
           className={`cursor-pointer text-center transition-all duration-500 ease-in-out ${
-            isExpanded ? 'max-w-6xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto  ' : 'w-96 h-full p-4 rounded-lg'
+            isExpanded ? 'max-w-6xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto  ' : ' w-96 h-full p-4 rounded-lg'
           } bg-gray-100`}
           onClick={handleClick}
         >
@@ -74,7 +75,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
             </>
           ) : (
             <>
-              <div className='flex justify-between flex-row fixed ml-4 mt-4'>
+              <div className='flex justify-between  flex-row fixed ml-4 mt-4'>
                 <h2 className="text-2xl font-bold mb-4">{expandedContent}</h2>
                 <button
                   className="px-4 text-3xl py-2 relative "
@@ -84,7 +85,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
                   <FaRegWindowClose/>
                 </button>
               </div>
-              <div className=" ">
+              <div className=" mt-20">
                 <Image src={imageURL} alt='{title}' className='px-4 rounded-lg h-full'/>
               </div>
               <h4>{title}</h4>
