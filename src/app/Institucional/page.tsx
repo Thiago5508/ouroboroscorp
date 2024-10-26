@@ -27,7 +27,7 @@ export default function Institucional() {
                   <Image src={foto1} alt="foto1" />
                 </div>
                 
-                <div className="flex flex-col sm:w-2/4" >
+                <div className="flex flex-col sm:w-2/4 gap-2" >
                 <h2 className="text-xl font-semibold sm:w-2/4 mb-10">Jamisson Machado</h2>
                   <p>Cofundador da Oub, estudante de Design Gráfico, Web Designer, voluntário na 
                     <Link 
@@ -37,16 +37,17 @@ export default function Institucional() {
                       href="https://www.projectool.com.br/" 
                       > Projectool, </Link>
                       Desenvolvedor Front-End e Artista Plástico nas horas vagas.</p>
-                      <div>
-                        <div>
+                      <div >
+                        <div className="flex flex-col gap-2" >
                           <span>Tecnologias que domino:</span>
+                          
                           <span className="flex flex-row text-3xl gap-2">
                           <FaHtml5 title="HTML5"/>
                           <FaCss3Alt title="CSS"/>
                           <FaFigma title="Figma"/>
                           <FaBootstrap title="bootstrap" />
                           </span>
-                          <div>
+                          <div className="flex flex-col gap-2">
                           <span>O que estou apredendo agora:</span>
                           <span className="flex flex-row text-3xl gap-2">
                           <FaJsSquare title="JavaScript"/>
@@ -65,11 +66,11 @@ export default function Institucional() {
                   <div className="flex sm:w-1/4">
                     <Image src={foto2} alt="foto1" className="rounded-full"/>
                   </div>
-                  <div className="flex flex-col sm:w-2/4" >
+                  <div className="flex flex-col sm:w-2/4 gap-4 " >
                   <h2 className="text-xl font-semibold mb-10">Thiago Oliveira</h2>
                     <p>Cofundador da Oub, estudante de Análise e Desenvolvimento de Sistemas, Web Designer e Desenvolvedor Fullstack.</p>
                         <div>
-                          <div>
+                          <div className="flex flex-col gap-2">
                             <span>Tecnologias que domino</span>
                             <span className="flex flex-row-reverse text-3xl gap-2">
                             <FaHtml5 title="HTML5"/>
@@ -78,7 +79,7 @@ export default function Institucional() {
                             <FaReact title="React"/>
                             <RiNextjsFill title="Nextjs"/>
                             </span>
-                            <div>
+                            <div className="flex flex-col gap-2">
                             <span>O que estou apredendo agora</span>
                             <span className="flex flex-row-reverse text-3xl gap-2">
                             <FaNodeJs title="Nodejs" />

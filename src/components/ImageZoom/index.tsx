@@ -74,10 +74,10 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
             </>
           ) : (
             <>
-              <div className='flex justify-between flex-row ml-4 mt-4'>
+              <div className='flex justify-between flex-row fixed ml-4 mt-4'>
                 <h2 className="text-2xl font-bold mb-4">{expandedContent}</h2>
                 <button
-                  className="px-4 text-3xl py-2 fixed top-10 right-4 sm:right-52 sm:top-10"
+                  className="px-4 text-3xl py-2 relative "
                   onClick={(e) => {
                     e.stopPropagation(); // Impede que o clique feche o banner imediatamente
                     handleClose();}}>
