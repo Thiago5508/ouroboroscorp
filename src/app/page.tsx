@@ -13,7 +13,7 @@ export default function Home() {
     <Container>
       <main className= " max-w-7xl mx-auto px-2 text-white w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start">
       <Banner/>
-      <div className="rounded-md px-4 mx-4 py-4 my-4 text-justify text-lg font-semibold">
+      <div className="bg-white text-black rounded-md px-4 mx-4 py-4 my-4 text-justify text-lg font-semibold">
         <div>
           <p className=" indent-3">Trabalhamos atualmente com modelos chaves para iniciar e alavancar no seu negocio: 
           </p>
