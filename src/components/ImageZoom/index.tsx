@@ -11,10 +11,9 @@ interface BannerAmpliadoProps {
   expandedContent: string; // Conteúdo exibido quando ampliado
   imageURL: StaticImageData | string;
   imagecardURL: StaticImageData | string;
-  price: string;
 }
 
-export default function BannerAmpliado({title, shortContent, expandedContent, imageURL,imagecardURL,price}:BannerAmpliadoProps){
+export default function BannerAmpliado({title, shortContent, expandedContent, imageURL,imagecardURL}:BannerAmpliadoProps){
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleClick = () => {
@@ -42,7 +41,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
 
                               // whatssap
   const phoneNumber = '5579998431776'; // Substitua pelo seu número de telefone
-  const message = `Olá! Eu gostaria de adquirir ${title} no valor  R$ ${price}` ; // Mensagem opcional
+  const message = `Olá! Eu gostaria de adquirir ${title}` ; // Mensagem opcional
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -64,8 +63,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
               <h2 className="text-lg font-bold">{title}</h2>
               <p>{shortContent}</p>
               <Image src={imagecardURL} alt='{title}' className='max-h-52'/>
-              <div className='flex flex-row justify-center items-center gap-2 mt-2'>
-                <span>R$ {price}</span> 
+              <div className='flex flex-row justify-center items-center gap-2 mt-2'> 
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <button 
                     className='flex flex-row bg-white rounded-md text-black border-2 border-slate-300 hover:tracking-widest duration-300 font-semibold px-1 py-1'

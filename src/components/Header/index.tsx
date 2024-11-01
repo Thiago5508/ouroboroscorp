@@ -33,6 +33,9 @@ export default function Header() {
           href='/Produtos'
           className="hover:text-white text-slate-400  text-sm sm:text-base ">Webprodutos</Link>
         <Link 
+          href='/Portfolio'
+          className="hover:text-white text-slate-400  text-sm sm:text-base ">Portfolio</Link>
+        <Link 
           href='/Institucional'
           className="hover:text-white text-slate-400 hidden sm:block">Sobre nós</Link>
         <Link href='/Contato' 
