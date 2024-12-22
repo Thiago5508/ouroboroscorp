@@ -13,8 +13,12 @@ const config: Config = {
         foreground: "var(--foreground)",
         'custom': '#222F37'
       },
+      fontSize: {
+        'jam': '0.6rem', // Um valor menor que `text-sm` (0.875rem padrão)
+      },
     },
   },
   plugins: [],
 };
 export default config;
+

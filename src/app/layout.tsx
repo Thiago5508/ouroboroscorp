@@ -7,6 +7,7 @@ import { ModalProvider } from "@/providers/modal";
 import Footer from "@/components/Footer";
 import { Nunito } from 'next/font/google';
 import Head from "next/head";
+import { Inter } from 'next/font/google';
 
 const nunito = Nunito({
   subsets: ['latin'], // Subconjunto de caracteres que você deseja suportar
@@ -22,6 +23,10 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const inter=Inter({
+  subsets: ['latin'],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+})
 
 export const metadata: Metadata = {
   title: "OubCorp - Ouroboros Corporation",
@@ -76,7 +81,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow"></meta>
       </Head>
       <body
-        className={`${nunito.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-custom pt-28`}
+        className={`${inter.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-custom pt-28`}
       >
         <AuthProvider>
           <ModalProvider>
