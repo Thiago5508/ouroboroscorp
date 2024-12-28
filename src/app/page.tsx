@@ -7,8 +7,15 @@ import foguete from '../assets/foguete.png'
 import relacion from '../assets/relacionamento.png'
 import market from '../assets/marketing.png'
 import vendas from '../assets/vendas.png'
+import elipse from '../assets/Ellipse.png'
+import cara from '../assets/man-7829544_1280 1.png'
+import Link from "next/link";
+
+
 
 export default function Home() {
+  const phoneNumber = '5579998431776';
+  const message = 'Olá, gostaria de falar sobre serviços digitais ofercidos pela sua empresa'
   return (
     <Container>
       <main className= " max-w-7xl mx-auto px-2 text-white w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -61,6 +68,40 @@ export default function Home() {
           <Image src={vendas} alt="ico1" className="w-14 mt-6"/>
           <h3 className="pt-2 pb-2 font-semibold">Mais vendas</h3>
           <p>E claro! todas essas vantagens só trarão benefícios para o seu negócio, como melhores resultados nas vendas.</p>
+        </div>
+      </section>
+      <section className="mb-auto">
+        <div className="grid sm:grid-cols-2 grid-cols-1">
+          <div className="flex flex-col">
+            <div className="flex justify-center mt-10 sm:mb-auto mb-96">
+              <Image src={elipse} alt="eli" className="w mt absolute"/>
+              <Image src={cara} alt="eli" className="flex mt-6 absolute"/>
+            </div>
+          <div className="w-full items-center justify-center flex mt-4">
+            <Link href='https://api.whatsapp.com/send?phone=5579998431776' className="bg-white w-48 flex justify-center items-center px-4 py-3 text-slate-900 font-semibold rounded-md"> Fale com a gente</Link>
+          </div>
+          </div>
+          <div className=" flex flex-col mt-10 sm:mt-auto ">
+            <h2 className="gap-2 mb-4 font-semibold sm:text-2xl text-xl">E por que ter uma site profissional?</h2>
+            <p>A decisão de ter um site profissional ao invés de um site de plataformas prontas envolve uma série de considerações que podem impactar diretamente o sucesso do seu negócio online.</p>
+            <p className="my-1">
+            Vantagens de um Site Profissional:
+            </p>
+            <div className="ml-3">
+              <li>Personalização completa: Um site profissional é desenvolvido sob medida para atender às suas necessidades específicas, permitindo que você tenha total controle sobre o design, a estrutura e os recursos.</li> 
+                
+              <li>Otimização para mecanismos de busca (SEO): Um site profissional pode ser otimizado para os principais motores de busca, como o Google, aumentando suas chances de aparecer nos primeiros resultados e atrair mais visitantes orgânicos.</li>
+
+              <li>Escalabilidade: Um site profissional é mais fácil de expandir e adaptar às mudanças do seu negócio, permitindo que você adicione novas páginas, funcionalidades e conteúdos conforme necessário.</li>
+
+              <li>Design exclusivo: Um design único e personalizado ajuda a fortalecer a identidade da sua marca e a se destacar da concorrência.</li>
+
+              <li>Velocidade de carregamento: Sites profissionais são geralmente mais rápidos, o que melhora a experiência do usuário e contribui para um melhor posicionamento nos resultados de busca.</li>
+
+              <li>Suporte técnico: Ao contratar uma empresa especializada, você terá acesso a um suporte técnico especializado para resolver qualquer problema que possa surgir.</li>
+
+            </div> 
+          </div>
         </div>
       </section>
       
