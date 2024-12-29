@@ -78,10 +78,10 @@ export default function Produto() {
       </section>
       
       <section className="flex flex-col text-lg">
-        <div className="w-full items-center justify-center flex mt-14 mb-14">
+        <div className="w-full items-center justify-center flex mt-24 mb-16">
             <Link href='https://api.whatsapp.com/send?phone=5579998431776' className="bg-white w-48 flex justify-center items-center px-4 py-3 text-slate-900 font-semibold rounded-md"> Fale com a gente</Link>
         </div>
-        <div className="flex col-span-2 justify-between mt-4 text-white mb-40">
+        <div className="flex col-span-2 justify-between mt-4 text-white mb-28">
           <div className="flex w-1/2 flex-col gap-2">
             <p className="text-orange-500 font-semibold">
             Construindo Sua Marca:</p>
