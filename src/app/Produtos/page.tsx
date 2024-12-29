@@ -4,11 +4,12 @@ import construindo from '@/assets/construindo.png'
 import marque from '@/assets/marque.png'
 import produtos from '@/assets/produtos.png'
 import alavanque from '@/assets/alavanque.png'
+import Link from "next/link";
 
 export default function Produto() {
  return (
    <Container>
-    <main className="flex items-center justify-center mx-auto w-full">
+    <main className="flex items-center justify-center mx-auto w-full flex-col">
       <section className="ml-9 sm:grid sm:grid-cols-2 flex flex-col w-full text-white">
         <div className=" flex flex-row w-full items-center">
           <div className="text-jam  -rotate-90 flex -m-10 h-24 w-40 font-thin text-slate-400"><p>People illustrations by Storyset</p></div>
@@ -76,8 +77,33 @@ export default function Produto() {
         </div>
       </section>
       
-      <section>
-        
+      <section className="flex flex-col text-lg">
+        <div className="w-full items-center justify-center flex mt-14 mb-14">
+            <Link href='https://api.whatsapp.com/send?phone=5579998431776' className="bg-white w-48 flex justify-center items-center px-4 py-3 text-slate-900 font-semibold rounded-md"> Fale com a gente</Link>
+        </div>
+        <div className="flex col-span-2 justify-between mt-4 text-white mb-40">
+          <div className="flex w-1/2 flex-col gap-2">
+            <p className="text-orange-500 font-semibold">
+            Construindo Sua Marca:</p>
+              <p>Construir uma marca forte é fundamental para o sucesso de qualquer negócio, seja ele grande ou pequeno. Uma marca bem estabelecida não é apenas um logo ou um nome, mas uma representação da identidade e dos valores da sua empresa. Ela cria um vínculo emocional com os seus clientes, tornando-os mais fiéis e promovendo o crescimento do seu negócio.</p>
+            
+            <p className="sm:mt-28 text-cyan-300">
+            Alavanque Seu Negócio:</p>
+              <p>Uma consultoria digital especializada em marketing e SEO pode ser o diferencial que seu negócio precisa para alcançar novos patamares. Ao contar com profissionais experientes, você terá acesso a estratégias personalizadas e eficazes para aumentar sua visibilidade online, atrair mais clientes e impulsionar suas vendas.
+              
+            </p>
+          </div>
+          <div className="flex w-1/2 flex-col sm:mt-40">
+            <p className="text-lime-300">Marque Presença Digital:</p>
+              <p>Marcar presença digital é fundamental para qualquer negócio nos dias de hoje. A internet se tornou o principal canal de comunicação e pesquisa das pessoas, e estar presente nesse ambiente é crucial para alcançar novos clientes e fortalecer sua marca.</p>
+            
+            <p className="sm:mt-48 text-purple-400">Produtos Para Gráfica:</p>
+              <p>
+              Os produtos gráficos são ferramentas essenciais para qualquer estratégia de marketing, pois permitem transmitir mensagens de forma visualmente atraente e memorável como em cartões de visita, folhetos e flyers, posters e cartazes, catálogos, banners, infográficos etc.</p>
+            
+
+          </div>
+        </div>
       </section>
     </main>
    </Container>
