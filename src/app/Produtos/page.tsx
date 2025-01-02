@@ -87,13 +87,13 @@ export default function Produto() {
             Construindo Sua Marca:</p>
               <p>Construir uma marca forte é fundamental para o sucesso de qualquer negócio, seja ele grande ou pequeno. Uma marca bem estabelecida não é apenas um logo ou um nome, mas uma representação da identidade e dos valores da sua empresa. Ela cria um vínculo emocional com os seus clientes, tornando-os mais fiéis e promovendo o crescimento do seu negócio.</p>
             
-            <p className="sm:mt-28 text-cyan-300">
+            <p className="sm:mt-32 text-cyan-300">
             Alavanque Seu Negócio:</p>
               <p>Uma consultoria digital especializada em marketing e SEO pode ser o diferencial que seu negócio precisa para alcançar novos patamares. Ao contar com profissionais experientes, você terá acesso a estratégias personalizadas e eficazes para aumentar sua visibilidade online, atrair mais clientes e impulsionar suas vendas.
               
             </p>
           </div>
-          <div className="flex w-1/2 flex-col sm:mt-40">
+          <div className="flex w-1/2 flex-col sm:mt-44 p-6">
             <p className="text-lime-300">Marque Presença Digital:</p>
               <p>Marcar presença digital é fundamental para qualquer negócio nos dias de hoje. A internet se tornou o principal canal de comunicação e pesquisa das pessoas, e estar presente nesse ambiente é crucial para alcançar novos clientes e fortalecer sua marca.</p>
             
