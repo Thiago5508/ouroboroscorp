@@ -55,21 +55,21 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
         <div
           className={`cursor-pointer text-center transition-all duration-500 ease-in-out ${
             isExpanded ? 'max-w-6xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto  ' : ' w-96 h-full p-4 rounded-lg'
-          } bg-gray-100`}
+          } bg-transparent`}
           onClick={handleClick}
         >
           {!isExpanded ? (
             <>
-              <h2 className="text-lg font-bold">{title}</h2>
-              <p>{shortContent}</p>
-              <Image src={imagecardURL} alt='{title}' className='max-h-52'/>
-              <div className='flex flex-row justify-center items-center gap-2 mt-2'> 
+              {/* <h2 className="text-lg font-bold">{title}</h2> */}
+              {/* <p>{shortContent}</p> */}
+              <Image src={imagecardURL} alt='{title}' className='max-h-48 rounded-md'/>
+              {/* <div className='flex flex-row justify-center items-center gap-2 mt-2'> 
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <button 
                     className='flex flex-row bg-white rounded-md text-black border-2 border-slate-300 hover:tracking-widest duration-300 font-semibold px-1 py-1'
                     >Obter<FaWhatsapp className='sm:text-xl text-lg text-green-600'/></button>
                 </a>
-              </div>
+              </div> */}
             </>
           ) : (
             <>
