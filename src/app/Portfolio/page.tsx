@@ -21,6 +21,9 @@ import ima12 from '@/assets/trabalhos/v61.png'
 import { i } from "framer-motion/client";
 
 export default function Portfolio() {
+    const phoneNumber = '5579998431776'; // Substitua pelo seu número de telefone
+    const message = `Olá! Eu gostaria de mais informações sobre seus serviços!` ; // Mensagem opcional
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
  return (
    <Container>
@@ -106,7 +109,9 @@ export default function Portfolio() {
                             Fale conosco para conhecer mais sobre nossos serviços e 
                             conte-nos sobre seu negócio.
                             <p>
-                            <button className="bg-slate-900 text-white py-3 px-6 rounded-md mt-4">Fale com a gente!</button>
+                                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                                 <button className="bg-slate-900 text-white py-3 px-6 rounded-md mt-4">Fale com a gente!</button>
+                                </a>
                             </p>
                         </p>
                         <p className="flex flex-col max-w-xl gap-4 mt-10">
