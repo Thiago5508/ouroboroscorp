@@ -5,22 +5,23 @@ import produto1 from '@/assets/produto1.svg'
 import produto2 from '@/assets/pexels-olly-3769021.png'
 import hero2Img from '@/assets/laptop.png'
 import BannerAmpliado from "@/components/ImageZoom";
-import ima1 from '@/assets/trabalhos/aescolha.png'
-import ima2 from '@/assets/trabalhos/a_escolha1.png'
+import ima1 from '@/assets/trabalhos/personT.png'
+import ima2 from '@/assets/trabalhos/person.png'
 import ima3 from '@/assets/trabalhos/ht.png'
-import ima4 from '@/assets/trabalhos/ht1.png'
+import ima4 from '@/assets/trabalhos/ht2.png'
 import ima5 from '@/assets/trabalhos/pf.png'
-import ima6 from '@/assets/trabalhos/pf1.png'
+import ima6 from '@/assets/trabalhos/pf2.png'
 import ima7 from '@/assets/trabalhos/v6.jpg'
 import ima8 from '@/assets/trabalhos/va.png'
 import ima9 from '@/assets/trabalhos/va1.png'
 import ima10 from '@/assets/trabalhos/vcb.png'
-import ima11 from '@/assets/trabalhos/vcblogo.png'
-import ima12 from '@/assets/trabalhos/v61.png'
+import ima11 from '@/assets/trabalhos/vcb2.png'
+import ima12 from '@/assets/trabalhos/v62.png'
 
 import { i } from "framer-motion/client";
 
 export default function Portfolio() {
+
     const phoneNumber = '5579998431776'; // Substitua pelo seu número de telefone
     const message = `Olá! Eu gostaria de mais informações sobre seus serviços!` ; // Mensagem opcional
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

@@ -40,9 +40,9 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
 
 
                               // whatssap
-  const phoneNumber = '5579998431776'; // Substitua pelo seu número de telefone
-  const message = `Olá! Eu gostaria de adquirir ${title}` ; // Mensagem opcional
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  // const phoneNumber = '5579998431776'; // Substitua pelo seu número de telefone
+  // const message = `Olá! Eu gostaria de adquirir ${title}` ; // Mensagem opcional
+  // const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="relative flex  text-black ">
@@ -54,7 +54,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
         {/* Banner */}
         <div
           className={`cursor-pointer text-center transition-all duration-500 ease-in-out ${
-            isExpanded ? 'max-w-6xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto  ' : ' w-96 h-full p-4 rounded-lg'
+            isExpanded ? 'sm:max-w-6xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto  ' : ' w-96 h-full p-4 rounded-lg'
           } bg-transparent`}
           onClick={handleClick}
         >
@@ -62,7 +62,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
             <>
               {/* <h2 className="text-lg font-bold">{title}</h2> */}
               {/* <p>{shortContent}</p> */}
-              <Image src={imagecardURL} alt='{title}' className='max-h-48 rounded-md'/>
+              <Image src={imagecardURL} alt='{title}' className='rounded-md'/>
               {/* <div className='flex flex-row justify-center items-center gap-2 mt-2'> 
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   <button 
@@ -73,17 +73,19 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
             </>
           ) : (
             <>
-              <div className='flex justify-between  flex-row fixed ml-4 mt-4'>
-                <h2 className="text-2xl font-bold mb-4">{expandedContent}</h2>
+              <div className='flex justify-between max-w-5xl w-full flex-row fixed ml-4 mt-4'>
+                <h2 className="text-2xl font-bold mb-4 ">{expandedContent}</h2>
                 <button
-                  className="px-4 text-3xl py-2 relative "
+                  className=" text-3xl -mr-7 "
                   onClick={(e) => {
                     e.stopPropagation(); // Impede que o clique feche o banner imediatamente
                     handleClose();}}>
                   <FaRegWindowClose/>
                 </button>
+
               </div>
               <div className=" mt-20">
+              
                 <Image src={imageURL} alt='{title}' className='px-4 rounded-lg h-full'/>
               </div>
               <h4>{title}</h4>
