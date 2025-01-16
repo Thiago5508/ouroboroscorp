@@ -40,9 +40,9 @@ export default function Portfolio() {
                 <BannerAmpliado 
                 imagecardURL={ima2}
                 imageURL={ima1}
-                title="Cartazes e Banners"
-                shortContent="Clique para conferir nosso último cartaz, vamos criar juntos o próximo."
-                expandedContent="Cartazes, banners e folders digitais criados sob medida para seu empreendimento." 
+                title="Websites"
+                shortContent="WebSite-Portfolio."
+                expandedContent="Tiki Tattoo" 
                 />
 
                 <BannerAmpliado 

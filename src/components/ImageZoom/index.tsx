@@ -3,6 +3,7 @@
 import Image, { StaticImageData } from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { FaRegWindowClose, FaWhatsapp } from 'react-icons/fa';
+import { IoClose } from "react-icons/io5";
 
 
 interface BannerAmpliadoProps {
@@ -54,7 +55,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
         {/* Banner */}
         <div
           className={`cursor-pointer text-center transition-all duration-500 ease-in-out ${
-            isExpanded ? 'sm:max-w-6xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto  ' : ' w-96 h-full p-4 rounded-lg'
+            isExpanded ? 'max-w-6xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto custom-scrollbar' : ' w-96 h-full p-4 rounded-lg'
           } bg-transparent`}
           onClick={handleClick}
         >
@@ -73,18 +74,21 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
             </>
           ) : (
             <>
-              <div className='flex justify-between max-w-5xl w-full flex-row fixed ml-4 mt-4'>
-                <h2 className="text-2xl font-bold mb-4 ">{expandedContent}</h2>
+              <div className='flex justify-between sm:flex-row ml-4 mt-4 '>
+                <div className='flex flex-col items-start ml-2 mt-4'>
+                <h2 className="text-2xl font-bold mb-4 sm:flex ">{expandedContent}</h2>
+                <p className='sm:flex '>{shortContent}</p>
+                </div>
                 <button
-                  className=" text-3xl -mr-7 "
+                  className=" text-6xl  "
                   onClick={(e) => {
                     e.stopPropagation(); // Impede que o clique feche o banner imediatamente
                     handleClose();}}>
-                  <FaRegWindowClose/>
+                  <IoClose/>
                 </button>
 
               </div>
-              <div className=" mt-20">
+              <div className=" mt-4">
               
                 <Image src={imageURL} alt='{title}' className='px-4 rounded-lg h-full'/>
               </div>
