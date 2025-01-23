@@ -14,7 +14,7 @@ import ima6 from '@/assets/trabalhos/pf2.png'
 import ima7 from '@/assets/trabalhos/v6.jpg'
 import ima8 from '@/assets/trabalhos/va.png'
 import ima9 from '@/assets/trabalhos/va1.png'
-import ima10 from '@/assets/trabalhos/vcb.png'
+import ima10 from '@/assets/trabalhos/vcblogo.png'
 import ima11 from '@/assets/trabalhos/vcb2.png'
 import ima12 from '@/assets/trabalhos/v62.png'
 
@@ -41,7 +41,7 @@ export default function Portfolio() {
                 imagecardURL={ima2}
                 imageURL={ima1}
                 title="Websites"
-                shortContent="WebSite-Portfolio."
+                shortContent="WebSite - Portfolio."
                 expandedContent="Tiki Tattoo" 
                 />
 
@@ -49,40 +49,40 @@ export default function Portfolio() {
                 imagecardURL={ima4}
                 imageURL={ima3}
                 title="WEBsites"
-                shortContent="Clique para conferir a riqueza de detalhes de nossos websites."
-                expandedContent="Aqui estão os detalhes ampliados sobre a informação 2."
+                shortContent="Websites - Agência de turismo"
+                expandedContent="Horizontal Turismo"
                 />
 
                 <BannerAmpliado
                 imagecardURL={ima6} 
                 imageURL={ima5}
                 title="WEBgalerias"
-                shortContent="Clique para conferir as possibilidades de demonstrar a sua arte também."
-                expandedContent="Você pode salvar e apresentar o seu portfolio em um só lugar ."
+                shortContent="WebGaleria - Portfolio de armazenamento e exibição de fotografias "
+                expandedContent="Jhon Doe - Fotografo"
                 />
 
                 <BannerAmpliado
                 imageURL={ima7}
                 imagecardURL={ima12} 
                 title="Blogs"
-                shortContent="Clique para conferir, o blog resgistra a tragetoria e biografia sua ou de seu empreendimento."
-                expandedContent="Blogs servem com rede informativa sobre novidades que você quer compatilhar." 
+                shortContent="Blogs - São constatemente atualizados para manter seu publico alvo informado"
+                expandedContent="V6 Rock Bar" 
                 />
 
                 <BannerAmpliado 
                 imagecardURL={ima9}
                 imageURL={ima8}
                 title="Websistemas e redes sociais"
-                shortContent="Clique para conferir possibilidades de como utiliza-las de forma dinâmica."
-                expandedContent="Criação dinamica de perfis onde você escolhe quais informações podem ser acessadas por todos."
+                shortContent="WEbSite - Crie um anuncio de serviço e consiga trabalhos online"
+                expandedContent="ContrateMy"
                 />
 
                 <BannerAmpliado
-                imagecardURL={ima10} 
-                imageURL={ima11}
+                imagecardURL={ima11} 
+                imageURL={ima10}
                 title="Logomarcas e cartões de visita"
-                shortContent="Clique para conferir o que estará a disposição para você e sua marca."
-                expandedContent="Criamos desde as logomarcas quanto a paleta de cores, sua empresa sempre na moda."
+                shortContent="Marca digital - Criação da identidade visual da sua empresa!"
+                expandedContent="Vince's Café Bar"
                 />
             
             </div>

@@ -80,7 +80,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
                 <p className='sm:flex '>{shortContent}</p>
                 </div>
                 <button
-                  className=" text-6xl  "
+                  className=" text-6xl"
                   onClick={(e) => {
                     e.stopPropagation(); // Impede que o clique feche o banner imediatamente
                     handleClose();}}>
