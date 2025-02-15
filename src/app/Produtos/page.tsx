@@ -13,7 +13,7 @@ export default function Produto() {
       <section className="ml-9 sm:grid sm:grid-cols-2 flex flex-col w-full text-white">
 
         <div className=" flex flex-row w-full items-center">
-          <div className=" flex sm:mb-10"><p className="text-jam  -rotate-90 flex sm:-m-10 h-24 w-40 font-thin text-slate-400">People illustrations by Storyset</p></div>
+          <div className=" flex sm:mb-10 -mt-32 mr-3"><p className="text-jam  -rotate-90 flex sm:-m-10 h-24 w-40 font-thin text-slate-400">People illustrations by Storyset</p></div>
             <div className="flex sm:flex-row flex-col w-full sm:-ml-10 -ml-48 gap-10 items-center">
               <Image
               src={construindo}
@@ -29,7 +29,7 @@ export default function Produto() {
         </div>
 
         <div className=" flex flex-row w-full items-center">
-          <div className="flex sm:mb-10"><p className="text-jam  -rotate-90 flex sm:-m-10 h-24 w-40 font-thin text-slate-400">Online illustrations by Storyset</p></div>
+          <div className="flex sm:mb-10 -mt-32 mr-3"><p className="text-jam  -rotate-90 flex sm:-m-10 h-24 w-40 font-thin text-slate-400">Online illustrations by Storyset</p></div>
             <div className=" flex sm:flex-row flex-col w-full sm:-ml-10 -ml-48 gap-10 items-center">
               <Image
                 src={marque}
@@ -46,7 +46,7 @@ export default function Produto() {
         </div>
 
         <div className=" flex flex-row w-full items-center">
-          <div className="flex sm:mb-10"><p className="text-jam  -rotate-90 flex sm:-m-10 h-24 w-40 font-thin text-slate-400">People illustrations by Storyset</p></div>
+          <div className="flex sm:mb-10 -mt-32 mr-3"><p className="text-jam  -rotate-90 flex sm:-m-10 h-24 w-40 font-thin text-slate-400">People illustrations by Storyset</p></div>
           <div className=" flex sm:flex-row flex-col w-full sm:-ml-10 -ml-48 gap-10 items-center">
           <Image
           src={produtos}
@@ -62,7 +62,7 @@ export default function Produto() {
         </div>
         
         <div className=" flex flex-row w-full items-center">
-        <div className="flex sm:mb-10"><p className="text-jam  -rotate-90 flex sm:-m-10 h-24 w-40 font-thin text-slate-400">Business illustrations by Storyset</p></div>
+        <div className="flex sm:mb-10 -mt-32 mr-3"><p className="text-jam  -rotate-90 flex sm:-m-10 h-24 w-40 font-thin text-slate-400">Business illustrations by Storyset</p></div>
         <div className=" flex sm:flex-row flex-col w-full sm:-ml-10 -ml-48 gap-10 items-center">
         <Image
           src={alavanque}
