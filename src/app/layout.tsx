@@ -32,6 +32,7 @@ export const metadata: Metadata = {
   title: "OubCorp - Ouroboros Corporation",
   description: "Empresa voltado ao ramo de WEBDesign,Websistemas e desenvolvimento Web/App",
   keywords: "OubCorp, Ouroboros Corporation, WebDesign, Websistemas, Desenvolvimento Web, Desenvolvimento App, Web Solutions, oubcorp, oub",
+  metadataBase: new URL("https://www.oubcorp.store/"),
   verification:{
     google: "wLMyYixsFwDgjWP_ozzh0rtskIlHb-_bBJzZEq97AEQ",
   },

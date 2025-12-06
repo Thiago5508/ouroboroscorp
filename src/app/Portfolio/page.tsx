@@ -106,7 +106,7 @@ export default function Portfolio() {
                 </Link>
                 <div className="w-2/3 sm:w-2/4 flex flex-col ml-4 gap-4 mt-20 h-full text-lg">
                     <h2 className="font-semibold text-base sm:text-lg text-bold ">Em que podemos te ajudar?</h2>
-                        <p>
+                        <span>
                             Fale conosco para conhecer mais sobre nossos serviços e 
                             conte-nos sobre seu negócio.
                             <p>
@@ -114,7 +114,7 @@ export default function Portfolio() {
                                  <button className="bg-slate-900 text-white py-3 px-6 rounded-md mt-4">Fale com a gente!</button>
                                 </a>
                             </p>
-                        </p>
+                        </span>
                         <p className="flex flex-col max-w-xl gap-4 mt-10">
                                 "Desenvolvemos Aplicaçoes Web para solucionar dificuldades do dia-a-dia,
                                 sejam elas organizacional,
