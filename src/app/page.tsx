@@ -1,16 +1,17 @@
 import Container from "@/components/container";
 import Image from "next/image";
-import binoculos from '../assets/binoculos.png'
-import Banner from "@/components/Banner";
-import credbi from '../assets/credibilidade.png'
-import foguete from '../assets/foguete.png'
-import relacion from '../assets/relacionamento.png'
-import market from '../assets/marketing.png'
-import vendas from '../assets/vendas.png'
-import elipse from '../assets/Ellipse.png'
-import cara from '../assets/man-7829544_1280 1.png'
 import Link from "next/link";
-
+import hero7 from '../assets/hero7.png'
+import {  FiArrowRight, FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
+import group from '../assets/group50.png'
+import hero1 from '../assets/layout/hero1.png'
+import hero2 from '../assets/layout/hero2.png'
+import hero3 from '../assets/layout/hero3.png'
+import hero4 from '../assets/layout/hero4.png'
+import logoub from "@/assets/oub_logo4.png";
+import section3 from "@/assets/section3.png";
+import group2 from "@/assets/group.png";
+import hero8 from '../assets/hero8.png'
 
 
 export default function Home() {
@@ -18,94 +19,171 @@ export default function Home() {
   const message = 'Olá, gostaria de falar sobre serviços digitais ofercidos pela sua empresa'
   return (
     <Container>
-      <main className= " max-w-7xl mx-auto px-2 text-white w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className= "mx-auto text-black w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start text-xl">
+
+      {/* Baner carrosel antigo nao mexer 
       <Banner/>
-      <div className="bg-white text-black rounded-md px-4 mx-4 py-4 my-4 text-justify text-lg font-semibold">
-        <div>
-          <p className=" indent-3">Trabalhamos atualmente com modelos chaves para iniciar e alavancar no seu negocio: 
-          </p>
-          <p className=" indent-3">O modelo Institucional para identificar o seu negocio, posiciona-lo no google maps e abrir portas de contato com seu cliente
-            e com pontencias novos fornecedores.
-          </p>
-          <p className=" indent-3">O modelo de Catálogo de Produtos com carrinho de compras permite que o cliente visualize todos os
-             itens disponíveis na sua loja, incluindo preços e descrições dos produtos. As seleções feitas pelo cliente são
-              automaticamente redirecionadas para o WhatsApp da sua empresa, gerando um pedido com o valor total, produtos escolhidos e a forma de pagamento escolhida. 
-          </p>
-          <p className=" indent-3">No modelo WEBSistemas de cadastro, você poderá registrar seus clientes de forma segura, armazenando dados essenciais. Além disso, 
-            é possível cadastrar chamados, pedidos e solicitações de clientes. O sistema de formulários utilizado pelo WEBSistemas é totalmente customizável,
-             permitindo adaptações conforme suas necessidades.
-          </p>
-        </div>
+      */}
+
+      <div className="hidden md:flex items-center left-0 ">
+        <Image src={hero7} alt="" className="rounded-md justify-start flex object-cover h-56"/>
       </div>
-      <h1 className="sm:text-2xl font-semibold text-lg">Ter um site proporciona ao seu negócio :</h1>
-      <section className="grid items-baseline grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="flex flex-col items-center justify-center p-4">
-          <Image src={binoculos} alt="ico1" className="w-14 mt-6"/>
-          <h3 className="pt-2 pb-2 font-semibold">Maior visibilidade</h3>
-          <p>"Quem não é visto não é lembrado". Com um site, seu negócio ganha mais visibilidade, pois ele ficará visível 24 horas por dia, 365 dias no ano.</p>
+      <div className="flex md:hidden items-center left-0 w-full ">
+        <Image src={hero8} alt="" className="rounded-md justify-start flex-1"/>
+      </div>
+
+      
+      <div className="bg-white text-black rounded-md px-4 py-4 my-4 text-justify max-w-4xl items-center  mx-auto">
+        <h1 className=" text-black text-3xl mt-8">Design, Tecnologia e Experiências que <p>Conectam Pessoas e Negócios</p></h1>
+        <div>
+          <p className="mt-10">Contamos com uma equipe multidisciplinar especializada em design de interfaces, 
+            desenvolvimento de sistemas web e aplicativos móveis. Trabalhamos com práticas contemporâneas de design e 
+            processos centrados no ser humano, garantindo soluções esteticamente consistentes, funcionais e acessíveis 
+            para diferentes perfis de público. Utilizamos tecnologias modernas e eficientes para entregar produtos digitais 
+            alinhados às necessidades de pessoas e negócios.
+          </p>   
         </div>
-        <div className="flex flex-col items-center justify-center p-4">
-          <Image src={credbi} alt="ico1" className="w-11 mt-6"/>
-          <h3 className="pt-2 pb-2 font-semibold">Credibilidade</h3>
-          <p>Ter um site trará uma imagem mais profissional ao seu negócio e consequentemente maior credibilidade e autoridade no mercado.</p>
-        </div>
-        <div className="flex flex-col items-center justify-center p-4">
-          <Image src={foguete} alt="ico1" className="w-14 mt-6"/>
-          <h3 className="pt-2 pb-2 font-semibold">Seu negócio vai além...</h3>
-          <p>Ter um site trará uma imagem mais profissional ao seu negócio e consequentemente maior credibilidade e autoridade no mercado.</p>
-        </div>
-        <div className="flex flex-col items-center justify-center p-4">
-          <Image src={relacion} alt="ico1" className="w-14 mt-6"/>
-          <h3 className="pt-2 pb-2 font-semibold">Melhor relacionamento com seu público</h3>
-          <p>Sites podem proporcionar um ótimo meio de interação com seu público, melhorando assim sua relação com seu cliente.</p>
-        </div>
-        <div className="flex flex-col items-center justify-center p-4">
-          <Image src={market} alt="ico1" className="w-14 mt-6"/>
-          <h3 className="pt-2 pb-2 font-semibold">Marketing mais eficiente</h3>
-          <p>Sites são uma ótima ferramenta para divulgação, e te ajudará a construir a imagem da sua marca e do seu negócio.</p>
-        </div>
-        <div className="flex flex-col items-center justify-center p-4">
-          <Image src={vendas} alt="ico1" className="w-14 mt-6"/>
-          <h3 className="pt-2 pb-2 font-semibold">Mais vendas</h3>
-          <p>E claro! todas essas vantagens só trarão benefícios para o seu negócio, como melhores resultados nas vendas.</p>
-        </div>
-      </section>
-      <section className="mb-auto">
-        <div className="grid sm:grid-cols-2 grid-cols-1">
-          <div className="flex flex-col">
-            <div className="flex justify-center mt-10 sm:mb-auto mb-96">
-              <Image src={elipse} alt="eli" className="w mt absolute"/>
-              <Image src={cara} alt="eli" className="flex mt-6 absolute"/>
+
+        <Link href={'/Institucional'} 
+        className="text-black border border-b-black p-1 pl-10 rounded-full flex w-fit mt-10 justify-center items-center"
+        > Conheça mais sobre nós e nossa equipe <FiArrowRight color="white"size={45} className="bg-black rounded-full ml-3"/></Link>
+      </div>
+
+      <Link href={'/Portfolio'} className="bg-[url('/retbar.png')] w-full h-56">
+        <div className="flex w-full h-full items-center justify-between max-w-7xl mx-auto">
+          <span className="text-white text-xl">Clique aqui e conheça nosso portfólio</span>
+          <Image src={group} alt="group"/>
+        </div> 
+      </Link>
+
+      <section className="w-full items-center justify-center text-xl">
+        <div className=" md:flex w-full h-full items-baseline justify-between max-w-7xl mx-auto">
+
+          <div className="md:w-1/5 w-full items-center flex flex-col md:block mb-14">
+            <Image src={hero1} alt=""/>
+            <div className="md:w-9/12 ml-2">
+              <h3 className="text-orange-600 font-bold text-xl">Construindo Sua Marca:</h3>
+                <p>Identidade visual</p>
+                <p>Gestão de marca</p>
+                <p>Branding e Logo</p>
             </div>
-          <div className="w-full items-center justify-center flex mt-4">
-            <Link href='https://api.whatsapp.com/send?phone=5579998431776' className="bg-white w-48 flex justify-center items-center px-4 py-3 text-slate-900 font-semibold rounded-md"> Fale com a gente</Link>
           </div>
+
+          <div className="md:w-1/5 w-full items-center flex flex-col md:block mb-14">
+            <Image src={hero2} alt=""/>
+            <div className="md:w-9/12 ml-2">
+              <h3 className="text-purple-600 font-bold text-xl">Edição e Impressão:</h3>
+                <p>Banners </p>
+                <p>Cartões de visitas</p>
+                <p>Artes para impressão</p>
+                <p>e afins</p>
+            </div>
           </div>
-          <div className=" flex flex-col mt-10 sm:mt-auto ">
-            <h2 className="gap-2 mb-4 font-semibold sm:text-2xl text-xl">E por que ter uma site profissional?</h2>
-            <p>A decisão de ter um site profissional ao invés de um site de plataformas prontas envolve uma série de considerações que podem impactar diretamente o sucesso do seu negócio online.</p>
-            <p className="my-1">
-            Vantagens de um Site Profissional:
-            </p>
-            <div className="ml-3">
-              <li>Personalização completa: Um site profissional é desenvolvido sob medida para atender às suas necessidades específicas, permitindo que você tenha total controle sobre o design, a estrutura e os recursos.</li> 
-                
-              <li>Otimização para mecanismos de busca (SEO): Um site profissional pode ser otimizado para os principais motores de busca, como o Google, aumentando suas chances de aparecer nos primeiros resultados e atrair mais visitantes orgânicos.</li>
 
-              <li>Escalabilidade: Um site profissional é mais fácil de expandir e adaptar às mudanças do seu negócio, permitindo que você adicione novas páginas, funcionalidades e conteúdos conforme necessário.</li>
+          <div className="md:w-1/5 w-full items-center flex flex-col md:block mb-14">
+            <Image src={hero3} alt=""/>
+            <div className="md:w-9/12 ml-2">
+              <h3 className="text-cyan-600 font-bold text-xl">Alavanque Seu Negócio:</h3>
+                <p>SEO</p>
+                <p>Marketing e</p>
+                <p>Consultoria Digital</p>
+            </div>
+          </div>
 
-              <li>Design exclusivo: Um design único e personalizado ajuda a fortalecer a identidade da sua marca e a se destacar da concorrência.</li>
+          <div className="md:w-1/5 w-full items-center flex flex-col md:block mb-14">
+            <Image src={hero4} alt=""/>
+            <div className="md:w-9/12 ml-2">
+              <h3 className="text-lime-400 font-bold text-xl">Marque Presença Digital:</h3>
+                <p>Sites e Landing pages</p>
+                <p>Portfolios digitais</p>
+                <p>Gestão de conteúdo</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <li>Velocidade de carregamento: Sites profissionais são geralmente mais rápidos, o que melhora a experiência do usuário e contribui para um melhor posicionamento nos resultados de busca.</li>
+      <section className="w-full items-center justify-center text-xl md:p-0 p-6">
+        <div className="flex w-full h-full items-center justify-center md:justify-start  max-w-7xl mx-auto">
+          <div className="md:w-1/2 md:pr-4 mb-24 md:mb-0">
+            <h4 className="text-orange-600 font-bold text-xl mb-6 md:mb-0">Construindo Sua Marca:</h4>
+            <p className="text-justify">Construir uma marca forte é fundamental para o sucesso de qualquer negócio, seja ele grande ou pequeno.
+               Uma marca bem estabelecida não é apenas um logo ou um nome, mas uma representação da identidade e dos valores da sua empresa. 
+              Ela cria um vínculo emocional com os seus clientes, tornando-os mais fiéis e promovendo o crescimento do seu negócio.</p>
+          </div>
+        </div>
 
-              <li>Suporte técnico: Ao contratar uma empresa especializada, você terá acesso a um suporte técnico especializado para resolver qualquer problema que possa surgir.</li>
+        <div className="flex w-full h-full items-center justify-center md:justify-end max-w-7xl mx-auto">
+          <div className="md:w-1/2 md:pl-4 mb-24 md:mb-0">
+            <h4 className="text-purple-600 font-bold text-xl mb-6 md:mb-0">Edição e Impressão</h4>
+            <p className="text-justify">Os produtos gráficos são ferramentas essenciais para qualquer estratégia de marketing, pois permitem 
+              transmitir mensagens de forma visualmente atraente e memorável como em cartões de visita, folhetos e flyers, posters e cartazes, 
+              catálogos, banners, infográficos etc.</p>
+          </div>
+        </div>
 
-            </div> 
+        <div className="flex w-full h-full items-center justify-center md:justify-start max-w-7xl mx-auto">
+          <div className="md:w-1/2 md:pr-2 mb-24 md:mb-0">
+            <h4 className="text-cyan-600 font-bold text-xl mb-6 md:mb-0">Alavanque Seu Negócio:</h4>
+            <p className="text-justify">Uma consultoria digital especializada em marketing e SEO pode ser o diferencial que seu negócio precisa 
+              para alcançar novos patamares. Ao contar com profissionais experientes, você terá acesso a estratégias personalizadas e eficazes para 
+              aumentar sua visibilidade online, atrair mais clientes e impulsionar suas vendas.</p>
+          </div>
+        </div>
+
+        <div className="flex w-full h-full items-center justify-center md:justify-end max-w-7xl mx-auto">
+          <div className="md:w-1/2 md:pl-2 mb-24 md:mb-0">
+            <h4 className="text-lime-400 font-bold text-xl mb-6 md:mb-0">Marque Presença Digital:</h4>
+            <p className="text-justify">Marcar presença digital é fundamental para qualquer negócio nos dias de hoje. A internet se tornou o principal 
+              canal de comunicação e pesquisa das pessoas, e estar presente nesse ambiente é crucial para alcançar novos clientes e fortalecer sua marca.</p>
           </div>
         </div>
       </section>
       
       
+      <section className="w-full md:block hidden" >
+        <div className="flex w-full h-full items-center justify-start max-w-7xl mx-auto ">
+          <div className="bg-[url('/background1.png')] h-14 w-28 items-end flex  justify-center ml-28">
+            <Image src={logoub} alt="logo"/>
+          </div>
+       </div>
+        <div className="bg-[url('/retbody.png')] w-full h-56">
+          <div className="flex w-full h-full items-center justify-between max-w-7xl mx-auto">
+            <div className="w-1/2">
+              <span className="text-3xl text-white">Siga a Oub nas redes sociais e conheça mais do nosso trabalho!</span>
+            </div>
+            <div className="w-1/2 flex justify-end items-center gap-20">
+              <FiInstagram color="white" size={85}/>
+              <FiFacebook color="white" size={85}/>
+              <FiLinkedin color="white" size={85}/>
+            </div>
+          </div>
+        </div>
+        <div className="hidden md:block">
+          <Image src={section3} alt="section"/>
+        </div>
+      </section>
+
+      <section className="w-full items-center justify-center text-xl md:block hidden">
+        <div className="flex flex-col w-full h-full items-center justify-center md:justify-start  max-w-7xl mx-auto">
+          <div className="mt-16">
+            <h4 className="w-1/3 text-3xl">E por que ter <p>um site profissional?</p></h4>
+            <p className="mt-8">A decisão de ter um site profissional ao invés de um site de plataformas prontas envolve uma série 
+              de considerações que podem impactar diretamente o sucesso do seu negócio online.</p>
+            <p className="mt-8">Vantagens de um site profissional:</p>
+          </div>
+          <Image src={group2} alt="" className="mt-10"/>
+        </div>
+      </section>
+      
+      <section className="w-full items-center justify-center text-xl md:block hidden">
+        <div className="flex flex-col w-full h-full items-center justify-center md:justify-start  max-w-7xl mx-auto">
+            <Link href='https://api.whatsapp.com/send?phone=5579998431776' 
+            className="text-black border border-green-600 p-4 pl-20 rounded-full items-center flex mt-10 text-3xl"
+              > Entre em contato e compartilhe suas ideias conosco 
+              <FiArrowRight color="white"size={110} className="bg-green-500 rounded-full ml-14 p-4"/></Link>
+        </div>
+      </section>
+
       </main>
       </Container>
   );

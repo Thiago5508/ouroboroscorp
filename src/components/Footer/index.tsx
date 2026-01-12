@@ -1,41 +1,42 @@
+import Image from "next/image";
 import Link from "next/link";
-import { FaWhatsapp } from "react-icons/fa";
-import { FiFacebook, FiInstagram } from "react-icons/fi";
+import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
+import logo4 from "@/assets/oub_logo5.png"
 
 export default function Footer() {
  return (
-   <main className=" mx-auto rounded-md w-full flex max-w-7xl flex-col items-center justify-center mt-10 bg-white text-black ">
-        <div className="flex flex-row w-full justify-between mx-auto gap-2 px-4 py-2">
+   <main className="w-full items-center justify-center text-xl mt-24 bg-custom text-white h-56">
+        <div className="flex w-full h-48 items-center justify-between max-w-7xl mx-auto">
             <div className="flex flex-col">
-                <h2 className="font-bold">Links uteis</h2>
+               <Image src={logo4} className="" alt=""/>
+            </div>
+
+            <div className="md:flex justify-around w-1/3 mx-auto hidden">
+                <div className="flex flex-col">
                 <Link href='/'>Home</Link>
-                <Link href='/Dashboard'>Login</Link>
-                <Link href='/Produtos'>Produtos</Link>
-                <Link href='/Institucional'>Institucional</Link>
+                </div>
+                <div className="flex flex-col">
+                    <Link href='/Portfolio' >Portfólio</Link>
+                </div>
+                <div className="flex flex-col">
+                    <Link href='/Portfolio' >Sobre nós</Link>
+                </div>
+                <div className="flex flex-col">
+                    <Link href='/Portfolio'>Contato</Link>
+                </div>
             </div>
-            <div className="flex flex-col">
-                <h2 className="font-bold">Parceiros</h2>
-                <Link href='#'>Design JM</Link>
-                
-            
-            </div>
-            <div className="flex flex-col">
-                <h2 className="font-bold">Endereço</h2>
-                <Link href='/Contato' className="flex flex-col">Av. Delmiro Gouveia, 400
-                <span>- Coroa do Meio, Aracaju-SE</span>
-                <span>49035-500</span></Link>
-            </div>
-            <div className="flex flex-col">
-                <h2 className="font-bold">Siga-nos</h2>
-                <Link href='/'className="flex flex-row gap-2 text-2xl">
-                <FiFacebook />
-                <FiInstagram />
-                <FaWhatsapp />
-                </Link>
+            <div className="flex flex-col items-center justify-center mt-6">
+                <div className="flex gap-4">
+                    <h2 className="font-bold">Siga-nos</h2>
+                    <Link href='/'className="flex flex-row gap-2 text-2xl"><FiInstagram /></Link>
+                    <Link href='/'className="flex flex-row gap-2 text-2xl"><FiLinkedin/></Link>
+                    <Link href='/'className="flex flex-row gap-2 text-2xl"><FiFacebook /></Link>
+                </div>
+                <span>oub.web.design@gmail.com</span>
             </div>
         </div>
-        <div className="mb-4 font-bold">
-            <span>&copy;Ouroboros Corporation</span>
+        <div className="flex w-full items-baseline justify-center max-w-7xl mx-auto">
+            <span>2024 &copy; Oub</span>
         </div>
    </main>
   );

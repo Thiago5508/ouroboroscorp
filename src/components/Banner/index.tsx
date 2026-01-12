@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import hero3 from '../../assets/hero3.png';
 import hero5 from '../../assets/hero5.jpg';
 import hero6 from '../../assets/hero6.webp';
+import hero7 from '../../assets/hero7.png'
 import Image from 'next/image';
 import './index.css'
 

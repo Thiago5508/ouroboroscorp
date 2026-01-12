@@ -1,78 +1,66 @@
-'use client'
-import { authOptions } from "@/lib/auth";
-import prisma from "@/lib/prisma";
-import { getServerSession } from "next-auth";
-import { signIn, signOut, useSession } from "next-auth/react";
+'use client';
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FiLoader, FiLock, FiLogOut, FiUser } from "react-icons/fi";
-import logoub from '@/assets/oub_logo.png'
-
-
+import { FiFacebook, FiInstagram, FiLinkedin, FiMenu, FiX} from "react-icons/fi";
+import logoub from "@/assets/oub_logo3.png";
 
 export default function Header() {
-  const {status,data} = useSession();
+  const [open, setOpen] = useState(false);
 
-  async function handleLogin(){
-    await signIn()
-  }
-  async function handleLogout(){
-    await signOut()
-  }
- return (
-   <header className=" fixed top-0 left-0 w-full flex items-center px-2 py-4 bg-custom h-20 text-white z-40">
-    <div className=" w-full flex max-w-7xl items-center justify-between mx-auto">
-      <Link href='/'>
-        <Image src={logoub} alt="logo oub" className="w-28"/>
-      </Link>
-      <div className=" flex content-around gap-4 font-semibold items-center">
-        <Link 
-          href='/' 
-          className="hover:text-white   text-slate-400 hidden sm:block">Home</Link>
-        <Link 
-          href='/Produtos'
-          className="hover:text-white text-slate-400  text-sm sm:text-base ">Webprodutos</Link>
-        <Link 
-          href='/Portfolio'
-          className="hover:text-white text-slate-400  text-sm sm:text-base ">Portfolio</Link>
-        <Link 
-          href='/Institucional'
-          className="hover:text-white text-slate-400 hidden sm:block">Sobre nós</Link>
-        <Link href='/Contato' 
-          className="hover:text-white text-slate-400 text-sm sm:text-base">Contato</Link>
-      
+  return (
+    <header className="fixed top-0 w-full max-w-1920 bg-white text-white z-40">
 
-
-
-          {status ==='loading'&&(
-            <button>
-              <FiLoader size={26} color="#4b5563"/>
-            </button>
-          )}
-          {status === 'unauthenticated' &&(
-            <div className="flex flex-col items-center justify-center">
-              
-              <button className=" hover:tracking-widest hover:text-white bg-cu hover:bg-custom-bg text-custom duration-300 rounded flex flex-1 w-full items-center justify-center" 
-                onClick={handleLogin}>
-                <span className="hidden sm:block">LOGIN</span>
-                <FiLock size={30} color="white"/>
-                
-              </button>
-            </div>
-          )}
-          {status ==='authenticated'&&(
-            <div className="flex flex-row ">
-              <Link href='/dashboard' className="flex flex-row">
-              <span>Sr(a) {data?.user?.name?.split(" ")[0]}</span>
-                <FiUser size={26} color="#4b5563"/>
-              </Link>
-              <button onClick={handleLogout}>
-                <FiLogOut size={26} color="#4b5563"/>
-              </button>
-           </div>
-          )}
+      {/* TOP BAR */}
+      <div className="w-full max-w-1920 h-14 flex items-center bg-[url('/rethead.png')]">
+        <div className="w-full max-w-7xl mx-auto flex justify-end px-4 gap-4">
+          <span>Siga-nos</span>
+          <FiInstagram size={26}/>
+          <FiLinkedin size={26} />
+          <FiFacebook size={26}/>
+        </div>
       </div>
-    </div>
-   </header>
+
+      {/* MAIN BAR */}
+      <div className="w-full h-20 flex items-center">
+        <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-4">
+
+          {/* LOGO */}
+          <Link href="/">
+            <Image src={logoub} alt="logo oub" className="w-28" />
+          </Link>
+
+          {/* DESKTOP MENU */}
+          <nav className="hidden md:flex gap-4 font-semibold items-center">
+            <Link href="/" className="text-black hover:text-slate-400">Home</Link>
+            <Link href="/Portfolio" className="text-black hover:text-slate-400">Portfolio</Link>
+            <Link href="/Institucional" className="text-black hover:text-slate-400">Sobre nós</Link>
+            <Link href="/Contato" className="text-black hover:text-slate-400">Contato</Link>
+          </nav>
+
+          {/* MOBILE BUTTON */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden"
+            aria-label="Abrir menu"
+          >
+            {open ? <FiX size={28} color="red"/> : <FiMenu size={28} color="red"/>}
+          </button>
+        </div>
+      </div>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="md:hidden bg-white border-t border-white/10">
+          <nav className="flex flex-col items-center gap-4 py-6 font-semibold">
+            <Link className="text-black hover:text-slate-400" onClick={() => setOpen(false)} href="/">Home</Link>
+            <Link className="text-black hover:text-slate-400" onClick={() => setOpen(false)} href="/Portfolio">Portfolio</Link>
+            <Link className="text-black hover:text-slate-400" onClick={() => setOpen(false)} href="/Institucional">Sobre nós</Link>
+            <Link className="text-black hover:text-slate-400" onClick={() => setOpen(false)} href="/Contato">Contato</Link>
+          </nav>
+        </div>
+      )}
+    </header>
   );
 }

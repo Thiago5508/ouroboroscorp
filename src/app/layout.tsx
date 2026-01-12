@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
-import { AuthProvider } from "@/providers/auth";
-import { ModalProvider } from "@/providers/modal";
 import Footer from "@/components/Footer";
 import { Nunito } from 'next/font/google';
 import Head from "next/head";
@@ -23,7 +21,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-const inter=Inter({
+const inter = Inter({
   subsets: ['latin'],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
 })
@@ -31,9 +29,19 @@ const inter=Inter({
 export const metadata: Metadata = {
   title: "OubCorp - Ouroboros Corporation",
   description: "Empresa voltado ao ramo de WEBDesign,Websistemas e desenvolvimento Web/App",
+  authors: [
+    { name: "OubCorp - Ouroboros Corporation" }
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   keywords: "OubCorp, Ouroboros Corporation, WebDesign, Websistemas, Desenvolvimento Web, Desenvolvimento App, Web Solutions, oubcorp, oub",
   metadataBase: new URL("https://www.oubcorp.store/"),
-  verification:{
+  verification: {
     google: "wLMyYixsFwDgjWP_ozzh0rtskIlHb-_bBJzZEq97AEQ",
   },
   icons: {
@@ -75,22 +83,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        {/* Meta tags personalizadas */}
-        <meta name="author" content="OubCorp - Ouroboros Corporation" />
-        <link rel="canonical" href="https://ouroboroscorp.vercel.app" />
-        <meta name="robots" content="index, follow"></meta>
-      </Head>
       <body
-        className={`${inter.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-custom pt-28`}
+        className={`${inter.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-white pt-28`}
       >
-        <AuthProvider>
-          <ModalProvider>
-            <Header/>
-            {children}
-            <Footer/>
-          </ModalProvider>
-        </AuthProvider>
+
+        <Header />
+        {children}
+        <Footer />
+
       </body>
     </html>
   );
