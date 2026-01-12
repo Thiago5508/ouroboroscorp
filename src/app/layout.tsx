@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Nunito } from 'next/font/google';
 import Head from "next/head";
 import { Inter } from 'next/font/google';
+import Temp from "@/components/Temp";
 
 const nunito = Nunito({
   subsets: ['latin'], // Subconjunto de caracteres que você deseja suportar
@@ -88,6 +89,7 @@ export default function RootLayout({
       >
 
         <Header />
+        <Temp/>
         {children}
         <Footer />
 

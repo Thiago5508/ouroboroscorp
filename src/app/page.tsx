@@ -12,6 +12,7 @@ import logoub from "@/assets/oub_logo4.png";
 import section3 from "@/assets/section3.png";
 import group2 from "@/assets/group.png";
 import hero8 from '../assets/hero8.png'
+import Temp from "@/components/Temp";
 
 
 export default function Home() {
@@ -24,13 +25,6 @@ export default function Home() {
       {/* Baner carrosel antigo nao mexer 
       <Banner/>
       */}
-
-      <div className="hidden md:flex items-center left-0 ">
-        <Image src={hero7} alt="" className="rounded-md justify-start flex object-cover h-56"/>
-      </div>
-      <div className="flex md:hidden items-center left-0 w-full ">
-        <Image src={hero8} alt="" className="rounded-md justify-start flex-1"/>
-      </div>
 
       
       <div className="bg-white text-black rounded-md px-4 py-4 my-4 text-justify max-w-4xl items-center  mx-auto">
