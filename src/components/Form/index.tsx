@@ -1,5 +1,7 @@
 'use client'
 import { useState } from "react";
+import { FiSend } from "react-icons/fi";
+import { IoSend } from "react-icons/io5";
 
 export default function Form() {
     const [formData, setFormData] = useState({
@@ -23,7 +25,7 @@ export default function Form() {
         const phoneNumber = '5579998431776'; // Substitua pelo seu número de WhatsApp
     
         // Montando a mensagem a ser enviada
-        const message = `Olá neu nome é ${formData.name}, gostaria de falar sobre ${formData.assunto}\nMensagem: ${formData.message}`;
+        const message = `Olá neu nome é ${formData.name}, gostaria de falar sobre \nMensagem: ${formData.message}`;
     
         // Gerando o link para o WhatsApp com a mensagem preenchida
         const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
@@ -39,45 +41,38 @@ export default function Form() {
       };
     
       return (
-        <form onSubmit={handleSubmit} className="w-full items-center flex flex-col gap-4 ">
+        <form onSubmit={handleSubmit} className="w-full items-center flex flex-col gap-4 text-xl">
+
+          <h1 className="text-3xl w-2/3 ">Envie uma mensagem para o nosso WhatsApp</h1>
+
           <div className="w-2/3 ">
-            <label className="font-semibold">Nome:</label>
+          
             <input
-              placeholder="digite seu nome ..."
+              placeholder="Digite seu nome ..."
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full rounded-md text-black px-1 "
+              className="w-full rounded-xl text-black px-6 py-4 border"
             />
           </div>
+
           <div className="w-2/3 flex flex-col">
-            <label>Assunto:</label>
-            <input
-              placeholder="digite o um titulo para o assunto que deseja ..."
-              type="text"
-              name="assunto"
-              value={formData.assunto}
-              onChange={handleChange}
-              required
-              className=" rounded-md text-black px-1"
-            />
-          </div>
-          <div className="w-2/3 flex flex-col">
-            <label>Mensagem:</label>
             <textarea
               placeholder="digite a mensagem  ..."
               name="message"
               value={formData.message}
               onChange={handleChange}
               required
-              className=" rounded-md resize-none text-black px-1"
+              className=" w-full rounded-xl text-black px-6 py-4 border h-56"
             />
           </div>
+
           <button 
-          type="submit"
-          className="text-white mt-4 font-semibold px-2 py-1 w-2/3 bg-green-500 rounded-md">Enviar para WhatsApp</button>
+            type="submit"
+            className="text-white mt-4 font-semibold px-2 py-2 w-2/3 bg-green-500 rounded-md justify-center flex items-center"><IoSend size={37}/>
+          </button>
         </form>
   );
 }

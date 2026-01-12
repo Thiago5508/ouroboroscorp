@@ -1,18 +1,15 @@
 import Container from "@/components/container";
 import Image from "next/image";
 import Link from "next/link";
-import hero7 from '../assets/hero7.png'
-import {  FiArrowRight, FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
+import {  FiArrowRight} from "react-icons/fi";
 import group from '../assets/group50.png'
 import hero1 from '../assets/layout/hero1.png'
 import hero2 from '../assets/layout/hero2.png'
 import hero3 from '../assets/layout/hero3.png'
 import hero4 from '../assets/layout/hero4.png'
-import logoub from "@/assets/oub_logo4.png";
-import section3 from "@/assets/section3.png";
 import group2 from "@/assets/group.png";
-import hero8 from '../assets/hero8.png'
-import Temp from "@/components/Temp";
+import Social from "@/components/Social";
+import section3 from "@/assets/section3.png";
 
 
 export default function Home() {
@@ -43,7 +40,7 @@ export default function Home() {
         > Conheça mais sobre nós e nossa equipe <FiArrowRight color="white"size={45} className="bg-black rounded-full ml-3"/></Link>
       </div>
 
-      <Link href={'/Portfolio'} className="bg-[url('/retbar.png')] w-full h-56">
+      <Link href={'/Portfolio'} className="bg-[url('/retbar.png')] w-full h-56 flex">
         <div className="flex w-full h-full items-center justify-between max-w-7xl mx-auto">
           <span className="text-white text-xl">Clique aqui e conheça nosso portfólio</span>
           <Image src={group} alt="group"/>
@@ -134,28 +131,12 @@ export default function Home() {
       </section>
       
       
-      <section className="w-full md:block hidden" >
-        <div className="flex w-full h-full items-center justify-start max-w-7xl mx-auto ">
-          <div className="bg-[url('/background1.png')] h-14 w-28 items-end flex  justify-center ml-28">
-            <Image src={logoub} alt="logo"/>
-          </div>
-       </div>
-        <div className="bg-[url('/retbody.png')] w-full h-56">
-          <div className="flex w-full h-full items-center justify-between max-w-7xl mx-auto">
-            <div className="w-1/2">
-              <span className="text-3xl text-white">Siga a Oub nas redes sociais e conheça mais do nosso trabalho!</span>
+        <Social/>
+        <section className="w-full md:block hidden -mt-8" >
+            <div className="hidden md:block">
+              <Image src={section3} alt="section"/>
             </div>
-            <div className="w-1/2 flex justify-end items-center gap-20">
-              <FiInstagram color="white" size={85}/>
-              <FiFacebook color="white" size={85}/>
-              <FiLinkedin color="white" size={85}/>
-            </div>
-          </div>
-        </div>
-        <div className="hidden md:block">
-          <Image src={section3} alt="section"/>
-        </div>
-      </section>
+        </section>
 
       <section className="w-full items-center justify-center text-xl md:block hidden">
         <div className="flex flex-col w-full h-full items-center justify-center md:justify-start  max-w-7xl mx-auto">
@@ -168,16 +149,6 @@ export default function Home() {
           <Image src={group2} alt="" className="mt-10"/>
         </div>
       </section>
-      
-      <section className="w-full items-center justify-center text-xl md:block hidden">
-        <div className="flex flex-col w-full h-full items-center justify-center md:justify-start  max-w-7xl mx-auto">
-            <Link href='https://api.whatsapp.com/send?phone=5579998431776' 
-            className="text-black border border-green-600 p-4 pl-20 rounded-full items-center flex mt-10 text-3xl"
-              > Entre em contato e compartilhe suas ideias conosco 
-              <FiArrowRight color="white"size={110} className="bg-green-500 rounded-full ml-14 p-4"/></Link>
-        </div>
-      </section>
-
       </main>
       </Container>
   );

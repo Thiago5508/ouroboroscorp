@@ -7,6 +7,7 @@ import { Nunito } from 'next/font/google';
 import Head from "next/head";
 import { Inter } from 'next/font/google';
 import Temp from "@/components/Temp";
+import Whatsapp from "@/components/Whatsapp";
 
 const nunito = Nunito({
   subsets: ['latin'], // Subconjunto de caracteres que você deseja suportar
@@ -91,6 +92,7 @@ export default function RootLayout({
         <Header />
         <Temp/>
         {children}
+        <Whatsapp/>
         <Footer />
 
       </body>

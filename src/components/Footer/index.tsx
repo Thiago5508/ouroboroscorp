@@ -5,7 +5,7 @@ import logo4 from "@/assets/oub_logo5.png"
 
 export default function Footer() {
  return (
-   <main className="w-full items-center justify-center text-xl mt-24 bg-custom text-white h-56">
+   <main className="w-full items-center justify-center text-xl bg-custom text-white h-56">
         <div className="flex w-full h-48 items-center justify-between max-w-7xl mx-auto">
             <div className="flex flex-col">
                <Image src={logo4} className="" alt=""/>

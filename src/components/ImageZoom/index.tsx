@@ -40,10 +40,6 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
   }, [isExpanded]);
 
 
-                              // whatssap
-  // const phoneNumber = '5579998431776'; // Substitua pelo seu número de telefone
-  // const message = `Olá! Eu gostaria de adquirir ${title}` ; // Mensagem opcional
-  // const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="relative flex  text-black ">
@@ -61,16 +57,9 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
         >
           {!isExpanded ? (
             <>
-              {/* <h2 className="text-lg font-bold">{title}</h2> */}
-              {/* <p>{shortContent}</p> */}
+              
               <Image src={imagecardURL} alt='{title}' className='rounded-md'/>
-              {/* <div className='flex flex-row justify-center items-center gap-2 mt-2'> 
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <button 
-                    className='flex flex-row bg-white rounded-md text-black border-2 border-slate-300 hover:tracking-widest duration-300 font-semibold px-1 py-1'
-                    >Obter<FaWhatsapp className='sm:text-xl text-lg text-green-600'/></button>
-                </a>
-              </div> */}
+              
             </>
           ) : (
             <>
