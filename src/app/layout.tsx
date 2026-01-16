@@ -3,16 +3,18 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Nunito } from 'next/font/google';
+import { Montserrat, Nunito } from 'next/font/google';
 import Head from "next/head";
 import { Inter } from 'next/font/google';
 import Temp from "@/components/Temp";
 import Whatsapp from "@/components/Whatsapp";
 
-const nunito = Nunito({
-  subsets: ['latin'], // Subconjunto de caracteres que você deseja suportar
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"], // Pesos das fontes que você quer usar (400 = normal, 700 = bold)
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"]
 });
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -23,10 +25,6 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-})
 
 export const metadata: Metadata = {
   title: "OubCorp - Ouroboros Corporation",
@@ -86,7 +84,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-white pt-28`}
+        className={`${montserrat.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-white pt-28`}
       >
 
         <Header />
