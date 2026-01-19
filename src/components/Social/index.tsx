@@ -12,7 +12,7 @@ export default function Social() {
   return (
     <section className="w-full md:block hidden" >
         <div className="flex w-full h-full items-center justify-start max-w-7xl mx-auto ">
-          <div className="bg-[url('/background1.png')] h-14 w-28 items-end flex  justify-center ml-28">
+          <div className="bg-[url('/background1.png')] h-14 w-28 items-end flex  justify-center">
             <Image src={logoub} alt="logo"/>
           </div>
        </div>
