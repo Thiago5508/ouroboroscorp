@@ -23,12 +23,12 @@ export default function Header() {
       </div>
 
       {/* MAIN BAR */}
-      <div className="w-full h-20 flex items-center">
+      <div className="w-full h-14 flex items-center">
         <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-4">
 
           {/* LOGO */}
           <Link href="/">
-            <Image src={logoub} alt="logo oub" className="w-28" />
+            <Image src={logoub} alt="logo oub" className="w-19" />
           </Link>
 
           {/* DESKTOP MENU */}
