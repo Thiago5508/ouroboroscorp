@@ -3,14 +3,22 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Montserrat,} from 'next/font/google';
+import { Montserrat, Roboto } from "next/font/google";
 import Temp from "@/components/Temp";
 import Whatsapp from "@/components/Whatsapp";
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  variable: '--font-montserrat',
+export const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+export const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  display: "swap",
+  weight: ["400", "500", "700"],
 });
 
 const geistSans = localFont({
@@ -80,18 +88,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${montserrat.className} npm${geistSans.variable} ${geistMono.variable} antialiased bg-white pt-28`}
-      >
+<html
+      lang="pt-BR"
+      className={`${montserrat.variable} ${roboto.variable} ${geistSans.variable} ${geistMono.variable}`}
+    >
+      <body className="antialiased pt-28">
+    <Header />
+    <Temp />
+    {children}
+    <Whatsapp />
+    <Footer />
 
-        <Header />
-        <Temp/>
-        {children}
-        <Whatsapp/>
-        <Footer />
-
-      </body>
-    </html>
+  </body>
+</html>
   );
 }
