@@ -18,9 +18,9 @@ export default function Social() {
               <span className="text-3xl text-white">Siga a Oub nas redes sociais e conheça mais do nosso trabalho!</span>
             </div>
             <div className="w-1/2 flex justify-end items-center gap-20">
-              <FiInstagram color="white" size={85}/>
-              <FiFacebook color="white" size={85}/>
-              <FiLinkedin color="white" size={85}/>
+              <FiInstagram color="white" size={80}/>
+              <FiFacebook color="white" size={80}/>
+              <FiLinkedin color="white" size={80}/>
             </div>
           </div>
         </div>

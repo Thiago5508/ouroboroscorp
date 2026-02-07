@@ -31,9 +31,9 @@ export default function Footer() {
             <div className="flex flex-col items-end justify-center mt-12">
                 <div className="flex gap-5 mb-5">
                     <h2 className="font-bold">Siga-nos</h2>
-                    <Link href='/'className="flex flex-row gap-2 text-2xl"><FiInstagram /></Link>
-                    <Link href='/'className="flex flex-row gap-2 text-2xl"><FiLinkedin/></Link>
-                    <Link href='/'className="flex flex-row gap-2 text-2xl"><FiFacebook /></Link>
+                    <Link href='https://www.instagram.com/oubcorp/'className="flex flex-row gap-2 text-2xl"><FiInstagram /></Link>
+                    <Link href='https://www.linkedin.com/company/oubdw'className="flex flex-row gap-2 text-2xl"><FiLinkedin/></Link>
+                    <Link href='https://www.facebook.com/profile.php?id=61587247004065'className="flex flex-row gap-2 text-2xl"><FiFacebook /></Link>
                 </div>
                 <span>oub.web.design@gmail.com</span>
             </div>

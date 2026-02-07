@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Contato() {
  return (
-   <main className= "mx-auto text-black w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start text-xl">
+   <main className="mt-20 mx-auto text-black w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start text-xl">
     <div className="max-w-7xl mt-5 mx-auto px-2 text-black w-full h-max flex flex-col sm:flex-row gap-8 row-start-2 items-center sm:items-start mb-36 ">
       <div className="w-full ">
         <Form/>
