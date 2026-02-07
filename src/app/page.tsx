@@ -36,8 +36,8 @@ export default function Home() {
         </div>
 
         <Link href={'/Institucional'} 
-        className="text-black border border-b-black p-1 pl-10 rounded-full flex w-fit mt-10 justify-center items-center"
-        > Conheça mais sobre nós e nossa equipe <FiArrowRight color="white"size={45} className="bg-black rounded-full ml-3"/></Link>
+        className="text-black border border-[#222F37] p-1 pl-10 rounded-full flex w-fit mt-10 justify-center items-center"
+        > Conheça mais sobre nós e nossa equipe <FiArrowRight color="white"size={45} className="bg-[#222F37] rounded-full ml-3"/></Link>
       </div>
 
       <Link href={'/Portfolio'} className="bg-[url('/retbar.png')] w-full h-56 flex">
@@ -47,13 +47,13 @@ export default function Home() {
         </div> 
       </Link>
 
-      <section className="w-full items-center justify-center text-xl">
+      <section className="w-full items-center justify-center text-xl mt-18 md:p-0 p-6">
         <div className=" md:flex w-full h-full items-baseline justify-between max-w-7xl mx-auto">
 
           <div className="md:w-1/5 w-full items-center flex flex-col md:block mb-14">
             <Image src={hero1} alt=""/>
             <div className="md:w-9/12 ml-2">
-              <h3 className="text-orange-600 font-bold text-xl">Construindo Sua Marca:</h3>
+              <h3 className="text-orange-600 font-bold text-xl mt-6 mb-2">Construindo Sua Marca:</h3>
                 <p>Identidade visual</p>
                 <p>Gestão de marca</p>
                 <p>Branding e Logo</p>
@@ -63,7 +63,7 @@ export default function Home() {
           <div className="md:w-1/5 w-full items-center flex flex-col md:block mb-14">
             <Image src={hero2} alt=""/>
             <div className="md:w-9/12 ml-2">
-              <h3 className="text-purple-600 font-bold text-xl">Edição e Impressão:</h3>
+              <h3 className="text-purple-600 font-bold text-xl mt-6 mb-2">Edição e Impressão:</h3>
                 <p>Banners </p>
                 <p>Cartões de visitas</p>
                 <p>Artes para impressão</p>
@@ -74,7 +74,7 @@ export default function Home() {
           <div className="md:w-1/5 w-full items-center flex flex-col md:block mb-14">
             <Image src={hero3} alt=""/>
             <div className="md:w-9/12 ml-2">
-              <h3 className="text-cyan-600 font-bold text-xl">Alavanque Seu Negócio:</h3>
+              <h3 className="text-cyan-600 font-bold text-xl mt-6 mb-2">Alavanque Seu Negócio:</h3>
                 <p>SEO</p>
                 <p>Marketing e</p>
                 <p>Consultoria Digital</p>
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="md:w-1/5 w-full items-center flex flex-col md:block mb-14">
             <Image src={hero4} alt=""/>
             <div className="md:w-9/12 ml-2">
-              <h3 className="text-lime-400 font-bold text-xl">Marque Presença Digital:</h3>
+              <h3 className="text-lime-400 font-bold text-xl mt-6 mb-2">Marque Presença Digital:</h3>
                 <p>Sites e Landing pages</p>
                 <p>Portfolios digitais</p>
                 <p>Gestão de conteúdo</p>
@@ -96,7 +96,7 @@ export default function Home() {
       <section className="w-full items-center justify-center text-xl md:p-0 p-6">
         <div className="flex w-full h-full items-center justify-center md:justify-start  max-w-7xl mx-auto">
           <div className="md:w-1/2 md:pr-4 mb-24 md:mb-0">
-            <h4 className="text-orange-600 font-bold text-xl mb-6 md:mb-0">Construindo Sua Marca:</h4>
+            <h4 className="text-orange-600 font-bold text-xl mb-5">Construindo Sua Marca:</h4>
             <p className="text-justify">Construir uma marca forte é fundamental para o sucesso de qualquer negócio, seja ele grande ou pequeno.
                Uma marca bem estabelecida não é apenas um logo ou um nome, mas uma representação da identidade e dos valores da sua empresa. 
               Ela cria um vínculo emocional com os seus clientes, tornando-os mais fiéis e promovendo o crescimento do seu negócio.</p>
@@ -105,7 +105,7 @@ export default function Home() {
 
         <div className="flex w-full h-full items-center justify-center md:justify-end max-w-7xl mx-auto">
           <div className="md:w-1/2 md:pl-4 mb-24 md:mb-0">
-            <h4 className="text-purple-600 font-bold text-xl mb-6 md:mb-0">Edição e Impressão</h4>
+            <h4 className="text-purple-600 font-bold text-xl mb-5">Edição e Impressão</h4>
             <p className="text-justify">Os produtos gráficos são ferramentas essenciais para qualquer estratégia de marketing, pois permitem 
               transmitir mensagens de forma visualmente atraente e memorável como em cartões de visita, folhetos e flyers, posters e cartazes, 
               catálogos, banners, infográficos etc.</p>
@@ -114,7 +114,7 @@ export default function Home() {
 
         <div className="flex w-full h-full items-center justify-center md:justify-start max-w-7xl mx-auto">
           <div className="md:w-1/2 md:pr-2 mb-24 md:mb-0">
-            <h4 className="text-cyan-600 font-bold text-xl mb-6 md:mb-0">Alavanque Seu Negócio:</h4>
+            <h4 className="text-cyan-600 font-bold text-xl mb-5">Alavanque Seu Negócio:</h4>
             <p className="text-justify">Uma consultoria digital especializada em marketing e SEO pode ser o diferencial que seu negócio precisa 
               para alcançar novos patamares. Ao contar com profissionais experientes, você terá acesso a estratégias personalizadas e eficazes para 
               aumentar sua visibilidade online, atrair mais clientes e impulsionar suas vendas.</p>
@@ -123,7 +123,7 @@ export default function Home() {
 
         <div className="flex w-full h-full items-center justify-center md:justify-end max-w-7xl mx-auto">
           <div className="md:w-1/2 md:pl-2 mb-24 md:mb-0">
-            <h4 className="text-lime-400 font-bold text-xl mb-6 md:mb-0">Marque Presença Digital:</h4>
+            <h4 className="text-lime-400 font-bold text-xl mb-5">Marque Presença Digital:</h4>
             <p className="text-justify">Marcar presença digital é fundamental para qualquer negócio nos dias de hoje. A internet se tornou o principal 
               canal de comunicação e pesquisa das pessoas, e estar presente nesse ambiente é crucial para alcançar novos clientes e fortalecer sua marca.</p>
           </div>

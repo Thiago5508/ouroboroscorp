@@ -10,7 +10,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full max-w-1920 bg-white text-white z-40">
+    <header className="fixed top-0 w-full max-w-1920 bg-white text-white z-40 font-roboto">
 
       {/* TOP BAR */}
       <div className="w-full max-w-1920 h-14 flex items-center bg-[url('/rethead.png')]">
@@ -53,7 +53,7 @@ export default function Header() {
       {/* MOBILE MENU */}
       {open && (
         <div className="md:hidden bg-white border-t border-white/10">
-          <nav className="flex flex-col items-center gap-4 py-6 font-semibold">
+          <nav className="flex flex-col items-center gap-4 py-6 font-semibold ">
             <Link className="text-black hover:text-slate-400" onClick={() => setOpen(false)} href="/">Home</Link>
             <Link className="text-black hover:text-slate-400" onClick={() => setOpen(false)} href="/Portfolio">Portfolio</Link>
             <Link className="text-black hover:text-slate-400" onClick={() => setOpen(false)} href="/Institucional">Sobre nós</Link>

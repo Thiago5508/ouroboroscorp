@@ -14,8 +14,8 @@ import ima6 from '@/assets/trabalhos/pf2.png'
 import ima7 from '@/assets/trabalhos/v6.jpg'
 import ima8 from '@/assets/trabalhos/va.png'
 import ima9 from '@/assets/trabalhos/va1.png'
-import ima10 from '@/assets/trabalhos/vcblogo.png'
-import ima11 from '@/assets/trabalhos/vcb2.png'
+import ima10 from '@/assets/trabalhos/vcblogo.jpg'
+import ima11 from '@/assets/trabalhos/vcb2.jpg'
 import ima12 from '@/assets/trabalhos/v62.png'
 import Social from "@/components/Social";
 
@@ -56,8 +56,8 @@ export default function Portfolio() {
                     <BannerAmpliado
                     imagecardURL={ima6} 
                     imageURL={ima5}
-                    title="WEBgalerias"
-                    shortContent="WebGaleria - Portfolio de armazenamento e exibição de fotografias "
+                    title="Sites instituicionais e portfólios online"
+                    shortContent="Portfólio Fotográfico"
                     expandedContent="Jhon Doe - Fotografo"
                     />
 
@@ -80,9 +80,11 @@ export default function Portfolio() {
                     <BannerAmpliado
                     imagecardURL={ima11} 
                     imageURL={ima10}
-                    title="Logomarcas e cartões de visita"
-                    shortContent="Marca digital - Criação da identidade visual da sua empresa!"
-                    expandedContent="Vince's Café Bar"
+                    title="Desenvolvimento de landings pages"
+                    shortContent="Vince’s Cult Café é uma landing page, desenvolvida
+                    para comunicar um espaço cultural voltado à presença, contemplação e experiências 
+                    autênticas, distantes da lógica acelerada do meio digital."
+                    expandedContent="Vince's Cult Café"
                     />
                 
                 </div>

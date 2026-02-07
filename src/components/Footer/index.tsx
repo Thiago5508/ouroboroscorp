@@ -3,9 +3,12 @@ import Link from "next/link";
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
 import logo4 from "@/assets/oub_logo5.png"
 
+// coloca o ano atual dinamicamente no rodapé
+const currentYear = new Date().getFullYear();
+
 export default function Footer() {
  return (
-   <main className="w-full items-center justify-center text-xl bg-custom text-white h-56">
+   <main className="w-full items-center justify-center bg-[#222F37] text-white h-56 font-roboto">
         <div className="flex w-full h-48 items-center justify-between max-w-7xl mx-auto">
             <div className="flex flex-col">
                <Image src={logo4} className="" alt=""/>
@@ -25,8 +28,8 @@ export default function Footer() {
                     <Link href='/Portfolio'>Contato</Link>
                 </div>
             </div>
-            <div className="flex flex-col items-center justify-center mt-6">
-                <div className="flex gap-4">
+            <div className="flex flex-col items-end justify-center mt-12">
+                <div className="flex gap-5 mb-5">
                     <h2 className="font-bold">Siga-nos</h2>
                     <Link href='/'className="flex flex-row gap-2 text-2xl"><FiInstagram /></Link>
                     <Link href='/'className="flex flex-row gap-2 text-2xl"><FiLinkedin/></Link>
@@ -36,7 +39,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="flex w-full items-baseline justify-center max-w-7xl mx-auto">
-            <span>2024 &copy; Oub</span>
+            <span>{currentYear} &copy; Oub</span>
         </div>
    </main>
   );
