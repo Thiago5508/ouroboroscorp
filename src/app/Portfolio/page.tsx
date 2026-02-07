@@ -28,8 +28,8 @@ export default function Portfolio() {
  return (
    <Container>
     <main  className= "mx-auto text-black w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start text-xl">
-        <div className= " max-w-7xl mt-5 mx-auto px-2 text-black w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start ">
-            <h1 className=" w-full text-base sm:text-3xl ml-4">Conheça nossos trabalhos!</h1>
+        <div className= " max-w-7xl mt-15 mx-auto px-2 text-black w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start ">
+            <h1 className=" w-full ml-15 text-base sm:text-3xl ml-4">Conheça nossos trabalhos!</h1>
 
             <div className="mb-20 px-2 ">
 

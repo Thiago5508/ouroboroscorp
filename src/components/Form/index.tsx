@@ -43,7 +43,7 @@ export default function Form() {
       return (
         <form onSubmit={handleSubmit} className="w-full items-center flex flex-col gap-4 text-xl">
 
-          <h1 className="text-3xl w-2/3 ">Envie uma mensagem para o nosso WhatsApp</h1>
+          <h1 className="text-3xl w-2/3 mb-10">Envie uma mensagem para o nosso WhatsApp</h1>
 
           <div className="w-2/3 ">
           
