@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Montserrat,} from 'next/font/google';
 import Temp from "@/components/Temp";
 import Whatsapp from "@/components/Whatsapp";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const montserrat = Montserrat({
   subsets: ['latin'],
