@@ -45,7 +45,7 @@ export default function Header() {
             className="md:hidden"
             aria-label="Abrir menu"
           >
-            {open ? <FiX size={28} color="red"/> : <FiMenu size={28} color="red"/>}
+            {open ? <FiX size={28} color="#222F37"/> : <FiMenu size={28} color="#222F37"/>}
           </button>
         </div>
       </div>

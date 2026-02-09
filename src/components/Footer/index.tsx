@@ -8,10 +8,10 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
  return (
-   <main className="w-full items-center justify-center bg-[#222F37] text-white h-56 font-roboto">
+   <main className="text-[clamp(10px,2.5vw,15px)] px-4 w-full items-center justify-center bg-[#222F37] text-white h-56 font-roboto">
         <div className="flex w-full h-48 items-center justify-between max-w-7xl mx-auto">
             <div className="flex flex-col">
-               <Image src={logo4} className="" alt=""/>
+               <Image src={logo4} className="shrink-0 w-[clamp(50px,15vw,128px)]" alt=""/>
             </div>
 
             <div className="md:flex justify-around w-1/3 mx-auto hidden">
@@ -28,7 +28,7 @@ export default function Footer() {
                     <Link href='/Portfolio'>Contato</Link>
                 </div>
             </div>
-            <div className="flex flex-col items-end justify-center mt-12">
+            <div className="flex flex-col items-end justify-center ">
                 <div className="flex gap-5 mb-5">
                     <h2 className="font-bold">Siga-nos</h2>
                     <Link href='https://www.instagram.com/oubcorp/'className="flex flex-row gap-2 text-2xl"><FiInstagram /></Link>
@@ -38,7 +38,7 @@ export default function Footer() {
                 <span>oub.web.design@gmail.com</span>
             </div>
         </div>
-        <div className="flex w-full items-baseline justify-center max-w-7xl mx-auto">
+        <div className="flex w-full items-baseline justify-center max-w-7xl mx-auto text-[#83929C]">
             <span>{currentYear} &copy; Oub</span>
         </div>
    </main>
