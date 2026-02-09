@@ -51,7 +51,7 @@ export default function BannerAmpliado({title, shortContent, expandedContent, im
         {/* Banner */}
         <div
           className={`cursor-pointer text-center transition-all duration-500 ease-in-out ${
-            isExpanded ? 'max-w-2xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto custom-scrollbar' : ' w-96 h-full p-4 rounded-lg'
+            isExpanded ? 'max-w-2xl items-baseline justify-end h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto custom-scrollbar' : ' w-90 h-full p-4 rounded-lg'
           } bg-transparent`}
           onClick={handleClick}
         >

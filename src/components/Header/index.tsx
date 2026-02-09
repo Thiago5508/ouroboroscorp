@@ -14,11 +14,12 @@ export default function Header() {
 
       {/* TOP BAR */}
       <div className="w-full max-w-1920 h-14 flex items-center bg-[url('/rethead.png')] font-roboto">
-        <div className="w-full max-w-7xl mx-auto flex justify-end px-4 gap-4">
+        <div className="w-full max-w-7xl mx-auto flex justify-end px-2 gap-4">
           <span>Siga-nos</span>
-          <Link href="https://www.instagram.com/oubcorp/" target="_blank"><FiInstagram size={26}/></Link>
-          <Link href="https://www.linkedin.com/company/oubdw" target="_blank"><FiLinkedin size={26} /></Link>
-          <Link href="https://www.facebook.com/profile.php?id=61587247004065" target="_blank"><FiFacebook size={26}/></Link>
+          <Link href="https://www.instagram.com/oubcorp/" target="_blank"><FiInstagram size={25}/></Link>
+          <Link href="https://www.linkedin.com/company/oubdw" target="_blank"><FiLinkedin size={25} /></Link>
+          <Link href="https://www.facebook.com/profile.php?id=61587247004065" target="_blank"><FiFacebook size={25}/></Link>
+          <Link href="/Contato" className="flex md:hidden pr-3 text-normal text-[#21C063] text-sm bg-white p-0.5 rounded-full flex w-fit font-roboto"><FiArrowRight color="white"size={21} className="bg-[#21C063] rounded-full mr-2"/>Contato</Link>
         </div>
       </div>
 

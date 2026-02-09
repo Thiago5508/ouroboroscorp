@@ -28,7 +28,8 @@ export default function Home() {
         <h1 className=" text-black text-[clamp(20px,2.5vw,28px)] mt-8">Design, Tecnologia e Experiências que <p>Conectam Pessoas e Negócios</p></h1>
         <div>
           <p className="mt-10 text-[clamp(14px,2.5vw,20px)]">Contamos com uma equipe multidisciplinar especializada em design de interfaces, 
-            desenvolvimento de sistemas web e aplicativos móveis. Trabalhamos com práticas contemporâneas de design e 
+            desenvolvimento de sistemas web e aplicativos móveis. 
+            Trabalhamos com práticas contemporâneas de design e 
             processos centrados no ser humano, garantindo soluções esteticamente consistentes, funcionais e acessíveis 
             para diferentes perfis de público. Utilizamos tecnologias modernas e eficientes para entregar produtos digitais 
             alinhados às necessidades de pessoas e negócios.
@@ -37,13 +38,13 @@ export default function Home() {
 
         <Link href={'/Institucional'} 
         className="text-[clamp(14px,2.5vw,20px)] text-black border border-[#222F37] p-1 pl-10 rounded-full flex w-fit mt-10 justify-center items-center"
-        > Conheça mais sobre nós<FiArrowRight color="white"size={45} className="bg-[#222F37] rounded-full ml-8 shrink-0"/></Link>
+        > Conheça mais sobre nós e nossa equipe<FiArrowRight color="white"size={45} className="bg-[#222F37] rounded-full ml-8 shrink-0"/></Link>
       </div>
 
       <Link href={'/Portfolio'} className="bg-[url('/retbar.png')] w-full h-56 flex">
         <div className="flex w-full h-full items-center justify-between max-w-7xl mx-auto">
-          <span className="text-white text-xl ml-4">Clique aqui e conheça nosso portfólio</span>
-            <div className="shrink-0 w-[clamp(200px,15vw,500px)]">
+          <span className="text-white text-[clamp(20px,2.5vw,20px)] ml-4">Clique aqui e conheça nosso portfólio</span>
+            <div className="shrink-0 w-[clamp(150px,15vw,500px)]">
               <Image src={group} alt="Thumbnails do portfólio" className="w-full h-auto"/>
             </div>
         </div> 
@@ -98,7 +99,7 @@ export default function Home() {
         <div className="flex w-full h-full items-center justify-center md:justify-start  max-w-7xl mx-auto">
           <div className="md:w-1/2 md:pr-4 mb-24 md:mb-0">
             <h4 className="text-orange-600 font-bold mb-5">Construindo Sua Marca:</h4>
-            <p className="text-justify">Construir uma marca forte é fundamental para o sucesso de qualquer negócio, seja ele grande ou pequeno.
+            <p className="">Construir uma marca forte é fundamental para o sucesso de qualquer negócio, seja ele grande ou pequeno.
                Uma marca bem estabelecida não é apenas um logo ou um nome, mas uma representação da identidade e dos valores da sua empresa. 
               Ela cria um vínculo emocional com os seus clientes, tornando-os mais fiéis e promovendo o crescimento do seu negócio.</p>
           </div>
@@ -107,7 +108,7 @@ export default function Home() {
         <div className="flex w-full h-full items-center justify-center md:justify-end max-w-7xl mx-auto">
           <div className="md:w-1/2 md:pl-4 mb-24 md:mb-0">
             <h4 className="text-purple-600 font-bold mb-5">Edição e Impressão</h4>
-            <p className="text-justify">Os produtos gráficos são ferramentas essenciais para qualquer estratégia de marketing, pois permitem 
+            <p className="">Os produtos gráficos são ferramentas essenciais para qualquer estratégia de marketing, pois permitem 
               transmitir mensagens de forma visualmente atraente e memorável como em cartões de visita, folhetos e flyers, posters e cartazes, 
               catálogos, banners, infográficos etc.</p>
           </div>
@@ -116,7 +117,7 @@ export default function Home() {
         <div className="flex w-full h-full items-center justify-center md:justify-start max-w-7xl mx-auto">
           <div className="md:w-1/2 md:pr-2 mb-24 md:mb-0">
             <h4 className="text-cyan-600 font-bold mb-5">Alavanque Seu Negócio:</h4>
-            <p className="text-justify">Uma consultoria digital especializada em marketing e SEO pode ser o diferencial que seu negócio precisa 
+            <p className="">Uma consultoria digital especializada em marketing e SEO pode ser o diferencial que seu negócio precisa 
               para alcançar novos patamares. Ao contar com profissionais experientes, você terá acesso a estratégias personalizadas e eficazes para 
               aumentar sua visibilidade online, atrair mais clientes e impulsionar suas vendas.</p>
           </div>
@@ -125,7 +126,7 @@ export default function Home() {
         <div className="flex w-full h-full items-center justify-center md:justify-end max-w-7xl mx-auto">
           <div className="md:w-1/2 md:pl-2 mb-24 md:mb-0">
             <h4 className="text-lime-400 font-bold mb-5">Marque Presença Digital:</h4>
-            <p className="text-justify">Marcar presença digital é fundamental para qualquer negócio nos dias de hoje. A internet se tornou o principal 
+            <p className="">Marcar presença digital é fundamental para qualquer negócio nos dias de hoje. A internet se tornou o principal 
               canal de comunicação e pesquisa das pessoas, e estar presente nesse ambiente é crucial para alcançar novos clientes e fortalecer sua marca.</p>
           </div>
         </div>
