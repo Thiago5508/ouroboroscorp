@@ -27,29 +27,29 @@ export default function Portfolio() {
 
  return (
    <Container>
-    <main  className= "mx-auto text-black w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start text-xl">
-        <div className= " max-w-7xl mt-15 mx-auto px-2 text-black w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start ">
-            <h1 className=" w-full ml-15 text-base sm:text-3xl ml-4">Conheça nossos trabalhos!</h1>
+    <main  className= "mx-auto w-full h-max flex flex-col gap-8 row-start-2 items-center">
+        <div className= "max-w-7xl mt-15 mx-auto px-2 w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start">
+            <h1 className="text-[clamp(20px,2.5vw,28px)]">Conheça nossos trabalhos!</h1>
 
-            <div className="mb-20 px-2 ">
+            <div className="mb-20">
 
 
-                <div className="flex flex-wrap gap-6 sm:justify-between justify-around">
+                <div className="flex flex-wrap gap-10 sm:justify-between justify-around">
                     
                     
                     <BannerAmpliado 
                     imagecardURL={ima2}
                     imageURL={ima1}
-                    title="Websites"
-                    shortContent="WebSite - Portfolio."
+                    title="Website"
+                    shortContent="Site institucional para estúdio de tatuagem."
                     expandedContent="Tiki Tattoo" 
                     />
 
                     <BannerAmpliado 
                     imagecardURL={ima4}
                     imageURL={ima3}
-                    title="WEBsites"
-                    shortContent="Websites - Agência de turismo"
+                    title="Website"
+                    shortContent="E-Commerce para agência de turismo."
                     expandedContent="Horizontal Turismo"
                     />
 
@@ -57,15 +57,15 @@ export default function Portfolio() {
                     imagecardURL={ima6} 
                     imageURL={ima5}
                     title="Sites instituicionais e portfólios online"
-                    shortContent="Portfólio Fotográfico"
-                    expandedContent="Jhon Doe - Fotografo"
+                    shortContent="Portfólio online de fotográfico."
+                    expandedContent="Jhon Doe - Fotógrafo"
                     />
 
                     <BannerAmpliado
                     imageURL={ima7}
                     imagecardURL={ima12} 
-                    title="Blogs"
-                    shortContent="Blogs - São constatemente atualizados para manter seu publico alvo informado"
+                    title="sistema de compra de ingressos "
+                    shortContent="Site e sistema de compra de ingressos para casa de shows."
                     expandedContent="V6 Rock Bar" 
                     />
 
@@ -73,7 +73,7 @@ export default function Portfolio() {
                     imagecardURL={ima9}
                     imageURL={ima8}
                     title="Websistemas e redes sociais"
-                    shortContent="AppMobile- Crie um anuncio de serviço e consiga trabalhos online"
+                    shortContent="Identidade visual para aplicativo."
                     expandedContent="ContrateMy"
                     />
 
@@ -81,9 +81,7 @@ export default function Portfolio() {
                     imagecardURL={ima11} 
                     imageURL={ima10}
                     title="Desenvolvimento de landings pages"
-                    shortContent="Vince’s Cult Café é uma landing page, desenvolvida
-                    para comunicar um espaço cultural voltado à presença, contemplação e experiências 
-                    autênticas, distantes da lógica acelerada do meio digital."
+                    shortContent="Landing page para espaço cultural."
                     expandedContent="Vince's Cult Café"
                     />
                 

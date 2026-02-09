@@ -11,17 +11,17 @@ export default function Institucional() {
     <Container>
       <main className= "mx-auto text-black w-full h-max text-xl flex flex-col gap-8 row-start-2 items-center sm:items-center">
         <div className="bg-white text-black rounded-md px-4 py-4 my-4 text-justify max-w-xl items-center  mx-auto">
-            <h1 className="text-3xl items-center my-4 ">Sobre a Oub</h1>
+            <h1 className="text-[clamp(20px,2.5vw,28px)] items-center my-4">Sobre a Oub</h1>
 
-            <div className="text-lg  items-center justify-center gap-4 flex flex-col my-9 ">
+            <div className="text-[clamp(15px,2.5vw,20px)] items-center justify-center gap-4 flex flex-col my-9 ">
               <p>Desenvolvemos soluções em design gráfico e sistemas digitais, integrando design e tecnologia por meio de processos centrados no ser humano. </p>
               <p>Atuamos com o objetivo de ser referência no desenvolvimento de soluções digitais orientadas pela centralidade no ser humano, acessibilidade como princípio, usabilidade e clareza.</p>
             </div>
 
-            <h2 className="mt-8 text-3xl">Nossa equipe</h2>
+            <h2 className="mt-8 text-[clamp(20px,2.5vw,28px)]">Nossa equipe</h2>
             
         </div>
-        <div className="gap-30 items-start text-lg flex flex-col md:flex-row justify-center mb-20">
+        <div className="gap-30 items-start text-[clamp(15px,2.5vw,20px)] flex flex-col md:flex-row justify-center mb-20">
               <div className="flex flex-col items-center gap-6">
                 <div className="flex flex-row text-center">
                   <div className="mr-6 flex flex-col gap-6 justify-center">
