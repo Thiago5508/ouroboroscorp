@@ -38,7 +38,7 @@ export default function Home() {
 
         <Link href={'/Institucional'} 
         className="text-[clamp(14px,2.5vw,20px)] text-black border border-[#222F37] p-1 pl-10 rounded-full flex w-fit mt-10 justify-center items-center"
-        > Conheça mais sobre nós e nossa equipe<FiArrowRight color="white"size={45} className="bg-[#222F37] rounded-full ml-8 shrink-0"/></Link>
+        >Conheça mais sobre nós e nossa equipe<FiArrowRight color="white"size={45} className="bg-[#222F37] rounded-full ml-8 shrink-0"/></Link>
       </div>
 
       <Link href={'/Portfolio'} className="bg-[url('/retbar.png')] w-full h-56 flex">
