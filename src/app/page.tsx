@@ -96,7 +96,7 @@ export default function Home() {
       </section>
 
       <section className="text-[clamp(15px,2.5vw,20px)] w-full items-center justify-center text-xl md:p-0 p-6">
-        <div className="flex w-full h-full items-center justify-center md:justify-start  max-w-7xl mx-auto">
+        <div className="flex w-full h-full items-center justify-center md:justify-start max-w-7xl mx-auto">
           <div className="md:w-1/2 md:pr-4 mb-24 md:mb-0">
             <h4 className="text-orange-600 font-bold mb-5">Construindo Sua Marca:</h4>
             <p className="">Construir uma marca forte é fundamental para o sucesso de qualquer negócio, seja ele grande ou pequeno.
