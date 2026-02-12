@@ -43,7 +43,7 @@ export default function Home() {
 
       <Link href={'/Portfolio'} className="bg-[url('/retbar.png')] w-full h-56 flex">
         <div className="flex w-full h-full items-center justify-between max-w-7xl mx-auto">
-          <span className="text-white text-[clamp(20px,2.5vw,20px)] ml-4">Clique aqui e conheça nosso portfólio</span>
+          <span className="text-white text-[clamp(15px,2.5vw,20px)] mx-4">Clique aqui e conheça nosso portfólio</span>
             <div className="shrink-0 w-[clamp(150px,15vw,500px)]">
               <Image src={group} alt="Thumbnails do portfólio" className="w-full h-auto"/>
             </div>

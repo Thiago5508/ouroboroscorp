@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import Link from "next/link";
 import { FiFacebook, FiInstagram, FiLinkedin,} from "react-icons/fi";
 import logoub from "@/assets/oub_logo4.png";
 
@@ -18,9 +19,15 @@ export default function Social() {
               <span className="text-3xl text-white">Siga a Oub nas redes sociais e conheça mais do nosso trabalho!</span>
             </div>
             <div className="w-1/2 flex justify-end items-center gap-20">
-              <FiInstagram color="white" size={80}/>
-              <FiFacebook color="white" size={80}/>
-              <FiLinkedin color="white" size={80}/>
+              <Link href="https://www.instagram.com/oubcorp/" target="_blank">
+                <FiInstagram color="white" size={80}/>
+              </Link>
+              <Link href="https://www.facebook.com/profile.php?id=61587247004065" target="_blank">
+                <FiFacebook color="white" size={80}/>
+              </Link>
+              <Link href="https://www.linkedin.com/company/oubdw" target="_blank">
+                <FiLinkedin color="white" size={80}/>
+              </Link>
             </div>
           </div>
         </div>

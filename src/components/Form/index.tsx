@@ -43,9 +43,9 @@ export default function Form() {
       return (
         <form onSubmit={handleSubmit} className="w-full items-center flex flex-col gap-4 text-[clamp(15px,2.5vw,20px)]">
 
-          <h1 className="text-[clamp(20px,2.5vw,28px)] w-2/3 mb-10">Envie uma mensagem para o nosso WhatsApp</h1>
+          <h1 className="text-[clamp(20px,2.5vw,28px)] w-full md:w-2/3 mb-10">Envie uma mensagem para o nosso WhatsApp</h1>
 
-          <div className="w-2/3 ">
+          <div className="w-full md:w-2/3">
           
             <input
               placeholder="Digite seu nome ..."
@@ -58,7 +58,7 @@ export default function Form() {
             />
           </div>
 
-          <div className="w-2/3 flex flex-col">
+          <div className="w-full md:w-2/3 flex flex-col">
             <textarea
               placeholder="digite a mensagem  ..."
               name="message"
@@ -71,7 +71,7 @@ export default function Form() {
 
           <button 
             type="submit"
-            className="text-white mt-4 font-semibold px-2 py-2 w-2/3 bg-green-500 rounded-md justify-center flex items-center"><IoSend size={37}/>
+            className="text-white mt-4 font-semibold px-2 py-2 w-full md:w-2/3 bg-green-500 rounded-md justify-center flex items-center"><IoSend size={37}/>
           </button>
         </form>
   );
