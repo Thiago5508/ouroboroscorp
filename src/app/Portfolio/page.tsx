@@ -14,8 +14,8 @@ import ima6 from '@/assets/trabalhos/pf2.png'
 import ima7 from '@/assets/trabalhos/v6.jpg'
 import ima8 from '@/assets/trabalhos/va.png'
 import ima9 from '@/assets/trabalhos/va1.png'
-import ima10 from '@/assets/trabalhos/vcblogo.jpg'
-import ima11 from '@/assets/trabalhos/vcb2.jpg'
+import ima10 from '@/assets/trabalhos/vcb.jpg'
+import ima11 from '@/assets/trabalhos/vcb1.jpg'
 import ima12 from '@/assets/trabalhos/v62.png'
 import rmc from '@/assets/trabalhos/rmc.jpg'
 import rmc1 from '@/assets/trabalhos/rmc1.jpg'
@@ -47,8 +47,8 @@ export default function Portfolio() {
                     />
 
                     <BannerAmpliado
-                    imagecardURL={ima11} 
-                    imageURL={ima1}
+                    imagecardURL={ima10} 
+                    imageURL={ima11}
                     title="Desenvolvimento de landings pages"
                     shortContent="Landing page para espaço cultural."
                     expandedContent="Vince's Cult Café"
