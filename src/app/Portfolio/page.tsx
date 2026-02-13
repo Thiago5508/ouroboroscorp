@@ -17,6 +17,8 @@ import ima9 from '@/assets/trabalhos/va1.png'
 import ima10 from '@/assets/trabalhos/vcblogo.jpg'
 import ima11 from '@/assets/trabalhos/vcb2.jpg'
 import ima12 from '@/assets/trabalhos/v62.png'
+import rmc from '@/assets/trabalhos/rmc.jpg'
+import rmc1 from '@/assets/trabalhos/rmc1.jpg'
 import Social from "@/components/Social";
 
 export default function Portfolio() {
@@ -36,7 +38,22 @@ export default function Portfolio() {
 
                 <div className="flex flex-wrap gap-10 sm:justify-between justify-around">
                     
-                    
+                    <BannerAmpliado
+                    imagecardURL={rmc} 
+                    imageURL={rmc1} 
+                    title="Branding e identidade visual"
+                    shortContent="Branding e identidade visual."
+                    expandedContent="Raquel Machado Crochê"
+                    />
+
+                    <BannerAmpliado
+                    imagecardURL={ima11} 
+                    imageURL={ima1}
+                    title="Desenvolvimento de landings pages"
+                    shortContent="Landing page para espaço cultural."
+                    expandedContent="Vince's Cult Café"
+                    />
+
                     <BannerAmpliado 
                     imagecardURL={ima2}
                     imageURL={ima1}
@@ -75,14 +92,6 @@ export default function Portfolio() {
                     title="Websistemas e redes sociais"
                     shortContent="Identidade visual para aplicativo."
                     expandedContent="ContrateMy"
-                    />
-
-                    <BannerAmpliado
-                    imagecardURL={ima11} 
-                    imageURL={ima10}
-                    title="Desenvolvimento de landings pages"
-                    shortContent="Landing page para espaço cultural."
-                    expandedContent="Vince's Cult Café"
                     />
                 
                 </div>
