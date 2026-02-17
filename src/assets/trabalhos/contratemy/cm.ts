@@ -1,0 +1,18 @@
+import cm2 from './2.png'
+import cm3 from './3.png'
+import cm4 from './4.png'
+import cm5 from './5.png'
+import cm6 from './6.png'
+import cm7 from './7.png'
+import cm8 from './8.png'
+import cm9 from './9.png'
+import cm10 from './10.png'
+import cm11 from './11.png'
+import cm12 from './12.png'
+import cm13 from './13.png'
+import cm14 from './14.png'
+import cm15 from './15.png'
+import cm16 from './16.png'
+import cm17 from './17.png'
+
+export const contrateMyImages = [cm2, cm3, cm4, cm5, cm6, cm7, cm8, cm9, cm10, cm11, cm12, cm13, cm14, cm15, cm16, cm17]

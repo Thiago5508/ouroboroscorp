@@ -2,6 +2,7 @@ import Container from "@/components/container";
 import foto1 from '@/assets/foto1.png'
 import foto2 from '@/assets/foto2.png'
 import Image from "next/image";
+import Link from "next/link";
 import { FiInstagram, FiLinkedin } from "react-icons/fi";
 import { FaBehance, FaGithub } from "react-icons/fa";
 import Social from "@/components/Social";
@@ -25,9 +26,9 @@ export default function Institucional() {
               <div className="flex flex-col items-center gap-6">
                 <div className="flex flex-row text-center">
                   <div className="mr-6 flex flex-col gap-6 justify-center">
-                    <FiLinkedin size={30}/>
-                    <FaBehance size={30}/>
-                    <FaGithub size={30}/>
+                    <Link href="https://linkedin.com/in/jamisson-machado" target="_blank"><FiLinkedin size={30}/></Link>
+                    <Link href="https://behance.net/jamisson_machado" target="_blank"><FaBehance size={30}/></Link>
+                    <Link href="https://github.com/Jamisson-Machado" target="_blank"><FaGithub size={30}/></Link>
                   </div>
                   <Image src={foto1} alt="foto Jamisson" className="h-56 w-56"/>
                 </div>
@@ -42,9 +43,9 @@ export default function Institucional() {
               <div className="flex flex-col gap-6">
                   <div className="flex flex-row">
                     <div className="mr-6 flex flex-col gap-6 justify-center">
-                      <FiLinkedin size={30}/>
-                      <FiInstagram size={30}/>
-                      <FaGithub size={30}/>
+                      <Link href="https://linkedin.com/in/thiago-feitosa-oliveira/" target="_blank"><FiLinkedin size={30}/></Link>
+                      <Link href="https://instagram.com/ol1veirathiago" target="_blank"><FiInstagram size={30}/></Link>
+                      <Link href="https://github.com/Thiago5508" target="_blank"><FaGithub size={30}/></Link>
                     </div>
                     <Image src={foto2} alt="foto Thiago" className=" h-56 w-56 flex"/>
                   </div>

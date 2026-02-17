@@ -12,8 +12,8 @@ import ima4 from '@/assets/trabalhos/ht2.png'
 import ima5 from '@/assets/trabalhos/pf.png'
 import ima6 from '@/assets/trabalhos/pf2.png'
 import ima7 from '@/assets/trabalhos/v6.jpg'
-import ima8 from '@/assets/trabalhos/va.png'
-import ima9 from '@/assets/trabalhos/va1.png'
+import ima8 from '@/assets/trabalhos/cm.png'
+import { contrateMyImages } from '@/assets/trabalhos/contratemy/cm';
 import ima10 from '@/assets/trabalhos/vcb.jpg'
 import ima11 from '@/assets/trabalhos/vcb1.jpg'
 import ima12 from '@/assets/trabalhos/v62.png'
@@ -29,69 +29,69 @@ export default function Portfolio() {
 
  return (
    <Container>
-    <main  className= "mx-auto w-full h-max flex flex-col gap-8 row-start-2 items-center">
-        <div className= "max-w-7xl mt-15 mx-auto px-2 w-full h-max flex flex-col gap-8 row-start-2 items-center sm:items-start">
-            <h1 className="text-[clamp(20px,2.5vw,28px)]">Conheça nossos trabalhos!</h1>
+    <main  className= "mx-auto w-full h-max flex flex-col gap-8 row-start-2 items-start sm:items-center">
+        <div className= "max-w-7xl mx-auto px-2 w-full h-max flex flex-col gap-8 row-start-2 items-start sm:items-start">
+            <h1 className="text-[clamp(20px,2.5vw,28px)] mt-15">Conheça nossos trabalhos!</h1>
 
             <div className="mb-20">
 
 
                 <div className="flex flex-wrap gap-10 sm:justify-between justify-around">
                     
+                    <BannerAmpliado 
+                    imagecardURL={ima8}
+                    imageURL={contrateMyImages}
+                    title="ContrateMy"
+                    shortContent="Estudo de caso para plataforma de contratação de serviços profissionais."
+                    expandedContent=""
+                    />
+
                     <BannerAmpliado
                     imagecardURL={rmc} 
-                    imageURL={rmc1} 
-                    title="Branding e identidade visual"
+                    imageURL={[rmc1]}
+                    title="Raquel Machado Crochê"
                     shortContent="Branding e identidade visual."
-                    expandedContent="Raquel Machado Crochê"
+                    expandedContent=""
                     />
 
                     <BannerAmpliado
                     imagecardURL={ima10} 
-                    imageURL={ima11}
-                    title="Desenvolvimento de landings pages"
+                    imageURL={[ima11]}
+                    title="Vince's Cult Café"
                     shortContent="Landing page para espaço cultural."
-                    expandedContent="Vince's Cult Café"
+                    expandedContent=""
                     />
 
                     <BannerAmpliado 
                     imagecardURL={ima2}
-                    imageURL={ima1}
-                    title="Website"
+                    imageURL={[ima1]} 
+                    title="Tiki Tattoo"
                     shortContent="Site institucional para estúdio de tatuagem."
-                    expandedContent="Tiki Tattoo" 
+                    expandedContent="" 
                     />
 
                     <BannerAmpliado 
                     imagecardURL={ima4}
-                    imageURL={ima3}
-                    title="Website"
+                    imageURL={[ima3]}
+                    title="Horizontal Turismo"
                     shortContent="E-Commerce para agência de turismo."
-                    expandedContent="Horizontal Turismo"
+                    expandedContent=""
                     />
 
                     <BannerAmpliado
                     imagecardURL={ima6} 
-                    imageURL={ima5}
-                    title="Sites instituicionais e portfólios online"
-                    shortContent="Portfólio online de fotográfico."
-                    expandedContent="Jhon Doe - Fotógrafo"
+                    imageURL={[ima5]}
+                    title="Jhon Doe - Fotógrafo"
+                    shortContent="Portfólio online de fotografias."
+                    expandedContent=""
                     />
 
                     <BannerAmpliado
-                    imageURL={ima7}
                     imagecardURL={ima12} 
-                    title="sistema de compra de ingressos "
-                    shortContent="Site e sistema de compra de ingressos para casa de shows."
-                    expandedContent="V6 Rock Bar" 
-                    />
-
-                    <BannerAmpliado 
-                    imagecardURL={ima9}
-                    imageURL={ima8}
-                    title="Websistemas e redes sociais"
-                    shortContent="Identidade visual para aplicativo."
-                    expandedContent="ContrateMy"
+                    imageURL={[ima7]}
+                    title="V6 Rock Bar"
+                    shortContent="Site com sistema de compra de ingressos para casa de shows."
+                    expandedContent="" 
                     />
                 
                 </div>
