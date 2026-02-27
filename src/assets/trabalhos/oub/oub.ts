@@ -1,0 +1,17 @@
+import oub1 from './oub1.png'
+import oub2 from './oub2.png'
+import oub3 from './oub3.png'
+import oub4 from './oub4.png'
+import oub5 from './oub5.png'
+import oub6 from './oub6.png'
+import oub7 from './oub7.png'
+import oub8 from './oub8.png'
+import oub9 from './oub9.png'
+import oub10 from './oub10.png'
+import oub11 from './oub11.png'
+import oub12 from './oub12.png'
+import oub13 from './oub13.png'
+import oub14 from './oub14.png'
+import oub15 from './oub15.png'
+
+export const oubImages = [oub1, oub2, oub3, oub4, oub5, oub6, oub7, oub8, oub9, oub10, oub11, oub12, oub13, oub14, oub15]

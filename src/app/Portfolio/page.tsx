@@ -12,13 +12,17 @@ import ima4 from '@/assets/trabalhos/ht2.png'
 import ima5 from '@/assets/trabalhos/pf.png'
 import ima6 from '@/assets/trabalhos/pf2.png'
 import ima7 from '@/assets/trabalhos/v6.jpg'
-import ima8 from '@/assets/trabalhos/cm.png'
-import { contrateMyImages } from '@/assets/trabalhos/contratemy/cm';
 import ima10 from '@/assets/trabalhos/vcb.jpg'
 import ima11 from '@/assets/trabalhos/vcb1.jpg'
 import ima12 from '@/assets/trabalhos/v62.png'
 import rmc from '@/assets/trabalhos/rmc.jpg'
 import rmc1 from '@/assets/trabalhos/rmc1.jpg'
+import oub from '@/assets/trabalhos/oub/oub.png'
+import { oubImages } from '@/assets/trabalhos/oub/oub';
+import cm from '@/assets/trabalhos/cm/cm.png'
+import { contrateMyImages } from '@/assets/trabalhos/cm/cm';
+import cv from '@/assets/trabalhos/cv/cv.png'
+import { clinicaVitaeImages } from '@/assets/trabalhos/cv/cv';
 import Social from "@/components/Social";
 
 export default function Portfolio() {
@@ -39,7 +43,15 @@ export default function Portfolio() {
                 <div className="flex flex-wrap gap-10 sm:justify-between justify-around">
                     
                     <BannerAmpliado 
-                    imagecardURL={ima8}
+                    imagecardURL={cv}
+                    imageURL={clinicaVitaeImages}
+                    title="Clinica Vitae"
+                    shortContent="Site institucional para clínica de saúde."
+                    expandedContent=""
+                    />
+
+                    <BannerAmpliado 
+                    imagecardURL={cm}
                     imageURL={contrateMyImages}
                     title="ContrateMy"
                     shortContent="Estudo de caso para plataforma de contratação de serviços profissionais."
@@ -59,6 +71,14 @@ export default function Portfolio() {
                     imageURL={[ima11]}
                     title="Vince's Cult Café"
                     shortContent="Landing page para espaço cultural."
+                    expandedContent=""
+                    />
+
+                    <BannerAmpliado 
+                    imagecardURL={oub}
+                    imageURL={oubImages}
+                    title="Oub - Web & Design"
+                    shortContent="Nosso site institucional."
                     expandedContent=""
                     />
 

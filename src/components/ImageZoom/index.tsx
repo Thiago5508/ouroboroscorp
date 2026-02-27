@@ -72,7 +72,7 @@ export default function BannerAmpliado({
               </div>
 
               {/* ✅ várias imagens */}
-              <div className="mt-4 flex flex-col gap-4">
+              <div className="mt-4 flex flex-col gap-">
                 {imageURL.map((img, index) => (
                   <Image
                     key={index}
