@@ -24,6 +24,8 @@ import { contrateMyImages } from '@/assets/trabalhos/cm/cm';
 import cv from '@/assets/trabalhos/cv/cv.png'
 import { clinicaVitaeImages } from '@/assets/trabalhos/cv/cv';
 import Social from "@/components/Social";
+import mo from '@/assets/trabalhos/mo/mo.jpg'
+import { mercadoOliveiraImages } from '@/assets/trabalhos/mo/mo';
 
 export default function Portfolio() {
 
@@ -43,9 +45,17 @@ export default function Portfolio() {
                 <div className="flex flex-wrap gap-10 sm:justify-between justify-around">
                     
                     <BannerAmpliado 
+                    imagecardURL={mo}
+                    imageURL={mercadoOliveiraImages}
+                    title="Mercado Oliveira"
+                    shortContent="E-commerce para supermercado local."
+                    expandedContent=""
+                    />
+
+                    <BannerAmpliado 
                     imagecardURL={cv}
                     imageURL={clinicaVitaeImages}
-                    title="Clinica Vitae"
+                    title="Clínica Vitae"
                     shortContent="Site institucional para clínica de saúde."
                     expandedContent=""
                     />

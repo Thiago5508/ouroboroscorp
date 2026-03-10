@@ -5,5 +5,10 @@ import cv4 from './cv4.png'
 import cv5 from './cv5.png'
 import cv6 from './cv6.png'
 import cv7 from './cv7.png'
+import cv8 from './cv8.png'
+import cv9 from './cv9.png'
+import cv10 from './cv10.png'
+import cv11 from './cv11.png'
+import cv12 from './cv12.png'
 
-export const clinicaVitaeImages = [cv1, cv2, cv3, cv4, cv5, cv6, cv7]
+export const clinicaVitaeImages = [cv1, cv2, cv3, cv4, cv5, cv6, cv7, cv8, cv9, cv10, cv11, cv12]

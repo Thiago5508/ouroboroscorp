@@ -1,0 +1,15 @@
+import mo1 from './mo1.png'
+import mo2 from './mo2.png'
+import mo3 from './mo3.png'
+import mo4 from './mo4.png'
+import mo5 from './mo5.png'
+import mo6 from './mo6.png'
+import mo7 from './mo7.png'
+import mo8 from './mo8.png'
+import mo9 from './mo9.png'
+import mo10 from './mo10.png'
+import mo11 from './mo11.png'
+import mo12 from './mo12.png'
+import mo13 from './mo13.png'
+
+export const mercadoOliveiraImages = [mo1, mo2, mo3, mo4, mo5, mo6, mo7, mo8, mo9, mo10, mo11, mo12, mo13]

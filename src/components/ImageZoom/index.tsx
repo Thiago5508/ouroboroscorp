@@ -41,8 +41,8 @@ export default function BannerAmpliado({
         <div
           className={`cursor-pointer text-left sm:text-center transition-all duration-500 ease-in-out ${
             isExpanded
-              ? 'max-w-2xl h-full bg-white mx-auto mt-10 rounded-lg overflow-y-auto custom-scrollbar'
-              : 'md:w-90 w-75 h-full p-4 rounded-lg'
+              ? 'max-w-4xl h-full bg-white mx-auto mt-10 overflow-y-auto custom-scrollbar'
+              : 'md:w-90 w-75 h-full p-4'
           } bg-transparent`}
           onClick={handleClick}
         >
@@ -61,7 +61,7 @@ export default function BannerAmpliado({
                 </div>
 
                 <button
-                  className="text-6xl"
+                  className="text-5xl"
                   onClick={(e) => {
                     e.stopPropagation();
                     handleClose();
@@ -78,7 +78,7 @@ export default function BannerAmpliado({
                     key={index}
                     src={img}
                     alt={`${title} ${index + 1}`}
-                    className="px-4 rounded-lg h-full"
+                    className="h-full"
                   />
                 ))}
               </div>
