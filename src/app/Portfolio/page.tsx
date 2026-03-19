@@ -26,6 +26,8 @@ import { clinicaVitaeImages } from '@/assets/trabalhos/cv/cv';
 import Social from "@/components/Social";
 import mo from '@/assets/trabalhos/mo/mo.jpg'
 import { mercadoOliveiraImages } from '@/assets/trabalhos/mo/mo';
+import osm from '@/assets/trabalhos/osm/osm.png'
+import { oubServiceImages } from '@/assets/trabalhos/osm/osm';
 
 export default function Portfolio() {
 
@@ -43,6 +45,14 @@ export default function Portfolio() {
 
 
                 <div className="flex flex-wrap gap-10 sm:justify-between justify-around">
+                    
+                    <BannerAmpliado 
+                    imagecardURL={osm}
+                    imageURL={oubServiceImages}
+                    title="OubService"
+                    shortContent="Sistema de controle de agendamentos"
+                    expandedContent=""
+                    />
                     
                     <BannerAmpliado 
                     imagecardURL={mo}
